@@ -128,8 +128,9 @@ def main():
         })
         with open(monitor_path, "w", encoding="utf-8") as f:
             json.dump(monitor, f, ensure_ascii=False, indent=2)
-            f.write("\\n")
-        raise RuntimeError("All RSS sources failed; previous data preserved")
+            f.write("\n")
+        print("All RSS sources failed; previous data preserved")
+        return
 
     reports = sorted(collected.values(), key=lambda x: x.get("date",""), reverse=True)[:100]
     # Keep previous reports if feeds responded but returned no items.
@@ -167,13 +168,13 @@ def main():
     })
     with open(os.path.join(DATA, "reports.json"), "w", encoding="utf-8") as f:
         json.dump({"updatedAt":now,"reports":reports}, f, ensure_ascii=False, indent=2)
-        f.write("\\n")
+        f.write("\n")
     with open(os.path.join(DATA, "statuses.json"), "w", encoding="utf-8") as f:
         json.dump({"updatedAt":now,"regions":candidates}, f, ensure_ascii=False, indent=2)
-        f.write("\\n")
+        f.write("\n")
     with open(monitor_path, "w", encoding="utf-8") as f:
         json.dump(monitor, f, ensure_ascii=False, indent=2)
-        f.write("\\n")
+        f.write("\n")
     print("Saved", len(reports), "reports and", len(candidates), "region candidates")
 
 if __name__ == "__main__":
