@@ -93,21 +93,111 @@ def fetch(query):
         out.append({"title":title, "url":link, "date":date, "source":source or "Google News RSS", "regions":sorted(set(matched)), "summary":desc[:500]})
     return out
 
+
+def fetch_json(url):
+    req = Request(url, headers={"User-Agent":"WhitelistRFMonitor/1.0 (+https://whitelist-rf.apruxdomain.space)"})
+    with urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+def norm_region(value):
+    return re.sub(r"[^a-zа-я0-9]+", " ", (value or "").lower().replace("ё", "е")).strip()
+
 def main():
     collected = {}
     errors = []
-    successful_feeds = 0
+    successful_sources = 0
+    api_ok = False
+    api_generated = None
+    api_region_statuses = {}
+
+    # Primary structured source: shutdown.fyi public API (CC BY 4.0).
+    try:
+        payload = fetch_json("https://shutdown.fyi/api/status.json")
+        items = payload.get("items")
+        if not isinstance(items, list):
+            raise ValueError("В ответе API отсутствует массив items")
+        api_ok = True
+        successful_sources += 1
+        api_generated = payload.get("generatedAt")
+
+        aliases = {}
+        for canonical, names in REGIONS.items():
+            aliases[norm_region(canonical)] = canonical
+            for alias in names:
+                aliases[norm_region(alias)] = canonical
+
+        for item in items:
+            if item.get("kind") != "region":
+                continue
+            api_name = item.get("name") or item.get("slug") or ""
+            canonical = aliases.get(norm_region(api_name))
+            if not canonical:
+                continue
+            state = item.get("status")
+            score = item.get("score")
+            confidence = item.get("confidence")
+            # shutdown.fyi reports anomalies/outages, not an official declaration
+            # of a whitelist. Therefore API signals can only create "possible".
+            if state in ("degraded", "down") and (confidence is None or confidence >= 0.15):
+                api_region_statuses[canonical.lower()] = "possible"
+                url = item.get("url") or ("https://shutdown.fyi/api/status/region/" + item.get("slug", "") + ".json")
+                collected["api:" + canonical.lower()] = {
+                    "title": "Сигнал по региону: " + canonical,
+                    "url": url,
+                    "date": item.get("computedAt") or item.get("changedAt") or api_generated or "",
+                    "source": "shutdown.fyi API (CC BY 4.0)",
+                    "regions": [canonical],
+                    "summary": "Статус: " + str(state) +
+                               "; индекс: " + str(score if score is not None else "н/д") +
+                               "; уверенность: " + str(confidence if confidence is not None else "н/д") +
+                               "; жалобы за час: " + str(item.get("reports1h", "н/д")) +
+                               ". Это сигнал мониторинга, не официальное подтверждение белого списка."
+                }
+    except Exception as exc:
+        errors.append("shutdown.fyi API: " + type(exc).__name__ + ": " + str(exc))
+        print("API error:", errors[-1])
+
+    # Recent incident feed is supplementary; API status remains usable if it fails.
+    try:
+        incidents_payload = fetch_json("https://shutdown.fyi/api/incidents.json")
+        incidents = incidents_payload.get("incidents", [])
+        if isinstance(incidents, list):
+            successful_sources += 1
+            for incident in incidents:
+                entity = incident.get("entity", "")
+                if not entity.startswith("region:"):
+                    continue
+                slug = entity.split(":", 1)[1]
+                region_item = next((x for x in (items if api_ok else []) if x.get("kind") == "region" and x.get("slug") == slug), None)
+                region_name = (region_item or {}).get("name") or slug
+                canonical = next((v for k, v in REGIONS.items() if norm_region(k) == norm_region(region_name)), None)
+                if not canonical:
+                    continue
+                key = "incident:" + str(incident.get("id", slug))
+                collected[key] = {
+                    "title": incident.get("title") or ("Инцидент: " + canonical),
+                    "url": incident.get("url") or "https://shutdown.fyi/",
+                    "date": incident.get("startedAt") or incidents_payload.get("generatedAt", ""),
+                    "source": "shutdown.fyi · инциденты (CC BY 4.0)",
+                    "regions": [canonical],
+                    "summary": "Серьёзность: " + str(incident.get("severity", "н/д")) +
+                               ". Сигнал мониторинга; не официальное подтверждение белого списка."
+                }
+    except Exception as exc:
+        errors.append("shutdown.fyi incidents: " + type(exc).__name__ + ": " + str(exc))
+        print("Incident API error:", errors[-1])
+
+    # RSS/news remains an additional source, never the only source of regional status.
     for query in QUERIES:
         try:
-            items = fetch(query)
-            successful_feeds += 1
-            for item in items:
+            for item in fetch(query):
                 if item.get("url"):
                     collected[item["url"]] = item
+            successful_sources += 1
         except Exception as exc:
             message = f"{query}: {type(exc).__name__}: {exc}"
             errors.append(message)
-            print("Feed error:", message)
+            print("RSS error:", message)
 
     monitor_path = os.path.join(DATA, "monitor.json")
     try:
@@ -116,31 +206,40 @@ def main():
     except (OSError, ValueError):
         monitor = {}
 
+    try:
+        with open(os.path.join(DATA, "reports.json"), encoding="utf-8") as f:
+            previous_reports = json.load(f).get("reports", [])
+    except (OSError, ValueError):
+        previous_reports = []
+
+    try:
+        with open(os.path.join(DATA, "statuses.json"), encoding="utf-8") as f:
+            previous_statuses = json.load(f).get("regions", {})
+    except (OSError, ValueError):
+        previous_statuses = {}
+
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    if successful_feeds == 0:
+    if successful_sources == 0:
         monitor.update({
-            "status": "error",
-            "lastAttemptAt": now,
-            "error": "Не удалось получить данные ни из одного RSS-источника.",
-            "details": errors,
-            "successfulFeeds": 0,
-            "totalFeeds": len(QUERIES)
+            "status": "error", "lastAttemptAt": now,
+            "error": "Не удалось получить данные ни из одного источника.",
+            "details": errors, "successfulFeeds": 0,
+            "totalFeeds": 5, "reportsFound": 0
         })
         with open(monitor_path, "w", encoding="utf-8") as f:
             json.dump(monitor, f, ensure_ascii=False, indent=2)
             f.write("\n")
-        print("All RSS sources failed; previous data preserved")
+        print("All sources failed; previous data preserved")
         return
 
-    reports = sorted(collected.values(), key=lambda x: x.get("date",""), reverse=True)[:100]
-    # Keep previous reports if feeds responded but returned no items.
-    if not reports:
-        try:
-            with open(os.path.join(DATA, "reports.json"), encoding="utf-8") as f:
-                previous = json.load(f).get("reports", [])
-            reports = previous
-        except (OSError, ValueError):
-            reports = []
+    # Retain old records when a source temporarily returns an empty response.
+    merged = {r.get("url"): r for r in previous_reports if r.get("url")}
+    merged.update({r.get("url"): r for r in collected.values() if r.get("url")})
+    reports = sorted(merged.values(), key=lambda x: x.get("date", ""), reverse=True)[:150]
+
+    candidates = dict(previous_statuses) if not api_ok else {}
+    if api_ok:
+        candidates.update(api_region_statuses)
 
     manual_path = os.path.join(DATA, "manual-statuses.json")
     try:
@@ -148,10 +247,6 @@ def main():
             manual = json.load(f).get("regions", {})
     except (OSError, ValueError):
         manual = {}
-    candidates = {}
-    for report in reports:
-        for region in report.get("regions", []):
-            candidates[region.lower()] = "possible"
     for region, status in manual.items():
         if status in ("confirmed", "possible", "none"):
             candidates[region.lower()] = status
@@ -160,22 +255,26 @@ def main():
         "status": "ok" if not errors else "partial",
         "lastAttemptAt": now,
         "lastSuccessAt": now,
-        "error": None if not errors else "Часть RSS-источников недоступна.",
+        "error": None if not errors else "Часть источников недоступна; успешные источники сохранены.",
         "details": errors,
-        "successfulFeeds": successful_feeds,
-        "totalFeeds": len(QUERIES),
-        "reportsFound": len(collected)
+        "successfulFeeds": successful_sources,
+        "totalFeeds": 5,
+        "reportsFound": len(collected),
+        "shutdownApiOk": api_ok,
+        "shutdownApiUpdatedAt": api_generated,
+        "shutdownApiRegionsWithSignals": len(api_region_statuses),
+        "attribution": "shutdown.fyi — CC BY 4.0"
     })
     with open(os.path.join(DATA, "reports.json"), "w", encoding="utf-8") as f:
-        json.dump({"updatedAt":now,"reports":reports}, f, ensure_ascii=False, indent=2)
+        json.dump({"updatedAt": now, "reports": reports}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(os.path.join(DATA, "statuses.json"), "w", encoding="utf-8") as f:
-        json.dump({"updatedAt":now,"regions":candidates}, f, ensure_ascii=False, indent=2)
+        json.dump({"updatedAt": now, "regions": candidates}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(monitor_path, "w", encoding="utf-8") as f:
         json.dump(monitor, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("Saved", len(reports), "reports and", len(candidates), "region candidates")
+    print("Saved", len(reports), "reports and", len(candidates), "region candidates; API:", api_ok)
 
 if __name__ == "__main__":
     main()
