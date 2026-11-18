@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "lastAttemptAt": null,
+  "lastSuccessAt": null,
+  "error": "Автоматический сбор ещё не запускался после обновления.",
+  "details": [],
+  "successfulFeeds": 0,
+  "totalFeeds": 3
+}
