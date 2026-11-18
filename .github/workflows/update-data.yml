@@ -1,7 +1,7 @@
 name: Update whitelist monitoring data
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,12 +17,12 @@ jobs:
         run: python scripts/collect_sources.py
       - name: Commit updated data
         run: |
-          if git diff --quiet -- data/reports.json data/statuses.json; then
+          if git diff --quiet -- data/reports.json data/statuses.json data/monitor.json; then
             echo "No changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reports.json data/statuses.json
+          git add data/reports.json data/statuses.json data/monitor.json
           git commit -m "Update whitelist monitoring data"
           git push
