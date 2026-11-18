@@ -1,9 +1,10 @@
 {
-  "status": "pending",
-  "lastAttemptAt": null,
-  "lastSuccessAt": null,
-  "error": "Автоматический сбор ещё не запускался после обновления.",
+  "status": "ok",
+  "lastAttemptAt": "2026-11-18T20:06:20+00:00",
+  "lastSuccessAt": "2026-11-18T20:06:20+00:00",
+  "error": null,
   "details": [],
-  "successfulFeeds": 0,
-  "totalFeeds": 3
+  "successfulFeeds": 3,
+  "totalFeeds": 3,
+  "reportsFound": 68
 }

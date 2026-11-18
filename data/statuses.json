@@ -1,4 +1,8 @@
 {
-  "updatedAt": null,
-  "regions": {}
+  "updatedAt": "2026-11-18T20:06:20+00:00",
+  "regions": {
+    "санкт-петербург": "possible",
+    "кемеровская область": "possible",
+    "краснодарский край": "possible"
+  }
 }
