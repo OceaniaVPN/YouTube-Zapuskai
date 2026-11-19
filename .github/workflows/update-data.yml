@@ -1,4 +1,5 @@
 name: Update whitelist monitoring data
+# Re-run after every collector or workflow change; collector reads publisher summary percentages.
 on:
   push:
     paths:
