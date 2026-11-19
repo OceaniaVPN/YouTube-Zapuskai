@@ -3,7 +3,7 @@
 Automatic matches are candidates only; confirmed/none statuses require manual review.
 """
 import json, os, re, time, html
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -110,15 +110,37 @@ def parse_monitor_runet_page(page):
     text = clean(re.sub(r"<[^>]+>", " ", page))
     text = re.sub(r"\s+", " ", text)
     restrictions = re.search(r"(\d{1,2})\s+из\s+14\s+дней\s+с\s+ограничениями", text, re.I)
-    whitelist_days = re.search(r"белые списки\s*[—–-]\s*(\d{1,2})\s+дн", text, re.I)
+    whitelist_days = re.search(
+        r"белые списки\s*[—–:-]\s*(\d{1,2})\s+дн|"
+        r"(\d{1,2})\s+из\s+14\s+дней\s+с\s+белыми списками",
+        text, re.I
+    )
     if not restrictions and not whitelist_days:
         return None
     last_day = re.search(r"последний отмеченный день\s*[—:]\s*(\d{1,2}\s+[а-яё]+)", text, re.I)
+    last_noted_date = None
+    if last_day:
+        months = {
+            "января":1, "февраля":2, "марта":3, "апреля":4, "мая":5, "июня":6,
+            "июля":7, "августа":8, "сентября":9, "октября":10, "ноября":11, "декабря":12
+        }
+        parts = last_day.group(1).lower().split()
+        try:
+            day_number, month_number = int(parts[0]), months[parts[1]]
+            today = datetime.now(timezone.utc).date()
+            year = today.year
+            candidate = date(year, month_number, day_number)
+            if (candidate - today).days > 1:
+                candidate = date(year - 1, month_number, day_number)
+            last_noted_date = candidate.isoformat()
+        except (ValueError, KeyError, IndexError):
+            last_noted_date = None
     return {
         "restrictionDays": int(restrictions.group(1)) if restrictions else None,
-        "periodDays": 14 if restrictions else None,
-        "whitelistDays": int(whitelist_days.group(1)) if whitelist_days else None,
-        "lastNotedDay": last_day.group(1) if last_day else None
+        "periodDays": 14 if restrictions else 14 if whitelist_days else None,
+        "whitelistDays": int(whitelist_days.group(1) or whitelist_days.group(2)) if whitelist_days else None,
+        "lastNotedDay": last_day.group(1) if last_day else None,
+        "lastNotedDate": last_noted_date
     }
 
 
@@ -208,10 +230,24 @@ def main():
                     page_data["url"] = page_url
                     runet_region_data[canonical.lower()] = page_data
                     white_days = page_data.get("whitelistDays")
-                    if white_days is not None and white_days > 0:
-                        runet_region_statuses[canonical.lower()] = "possible"
+                    restriction_days = page_data.get("restrictionDays")
+                    last_date = page_data.get("lastNotedDate")
+                    fresh = False
+                    if last_date:
+                        try:
+                            age_days = (datetime.now(timezone.utc).date() - date.fromisoformat(last_date)).days
+                            fresh = 0 <= age_days <= 3
+                        except ValueError:
+                            fresh = False
+                    if fresh and white_days is not None and white_days > 0:
+                        # Red: the source explicitly records whitelist use in the 14-day window.
+                        runet_region_statuses[canonical.lower()] = "confirmed"
                         runet_regions_with_whitelist.add(canonical)
-                    elif white_days == 0:
+                    elif fresh and restriction_days is not None and restriction_days > 0:
+                        # Yellow: restrictions were recorded, but whitelist days are zero/unspecified.
+                        runet_region_statuses[canonical.lower()] = "possible"
+                    elif fresh and restriction_days == 0 and white_days == 0:
+                        # Green only when the source explicitly reports both counters as zero.
                         runet_region_statuses[canonical.lower()] = "none"
             except Exception as exc:
                 runet_page_errors += 1
@@ -385,6 +421,12 @@ def main():
         "monitorRunetPagesTotal": runet_pages_total,
         "monitorRunetRegionsWithData": len(runet_region_data),
         "monitorRunetRegionsWithWhitelist": len(runet_regions_with_whitelist),
+        "monitorRunetRegionsConfirmedNoRestriction": sum(
+            1 for key, data in runet_region_data.items()
+            if data.get("lastNotedDate") and
+            (datetime.now(timezone.utc).date() - date.fromisoformat(data["lastNotedDate"])).days in range(0, 4) and
+            data.get("restrictionDays") == 0 and data.get("whitelistDays") == 0
+        ),
         "regionReportsFound": len(region_report_names | runet_regions_with_whitelist),
         "attribution": "shutdown.fyi / Монитор Рунета — На связи"
     })
