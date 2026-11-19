@@ -185,12 +185,18 @@ def parse_taucloud_page(page):
                     entry["disabled"] += 1
 
     for district in TAUCLOUD_DISTRICTS:
-        if district in districts and districts[district]["enabled"] + districts[district]["disabled"] > 0:
-            continue
+        # Prefer the publisher's own aggregate percentage from the map summary.
+        # The operator table is a fallback; its display may omit rows with no data.
         short = "KGD" if district == "Калининград" else district
         match = re.search(r"(?<![A-Za-zА-Яа-я])" + re.escape(short) + r"\s+(\d{1,3})%", plain, re.I)
         if match:
-            districts[district] = {"percentage":int(match.group(1)), "enabled":None, "disabled":None}
+            districts[district] = {
+                "percentage": int(match.group(1)),
+                "enabled": None,
+                "disabled": None,
+                "measuredOperators": None,
+                "percentageSource": "publisher summary"
+            }
 
     if not checked_at or not districts:
         raise ValueError("Не удалось разобрать дату или таблицу замеров Taucloud")
