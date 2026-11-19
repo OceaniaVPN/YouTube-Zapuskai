@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T05:27:40+00:00",
+  "updatedAt": "2026-11-19T05:37:29+00:00",
   "reports": [
     {
       "title": "«Белый список»: что будет доступно россиянам при отключении мобильного интернета? - Новости Севастополя",
@@ -178,7 +178,9 @@
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBBZGkzMUI5QmJBNFNPV3dFOEFoaWJkdDZveE9TRVlsOGZsekRVUUw5cXJOdk5neVk0aGhHY3V3SURtLUcxdE5r0gFPQVVfeXFMTlJuWnFBNWZ6SktnMlpnajBMRExaWmc4Ul80VzRvN0ZzbkhESHJTWERQd0FKVXcxUVROZTZybzI5ZjlIaVdUU3BTSzlXTWFiOA?oc=5",
       "date": "Tue, 05 May 2026 07:00:00 GMT",
       "source": "Оренбург Медиа",
-      "regions": [],
+      "regions": [
+        "Оренбургская область"
+      ],
       "summary": "Белые списки. В Оренбургской области ввели ограничения мобильного интернета Оренбург Медиа"
     },
     {
@@ -252,7 +254,9 @@
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONE13RUxPcTFrb2tqRk9lSEpGWTdBSFE5ajJMcHRKQUlENXVwRTd4R0N1cTh1ODBCYm4tb28xdXZidl9IU0NGSzQ2ZEk3emI0eW9qTmtDTTRTX241ZlpuVXllaTZUamxUQ3NWMmg0RmxHV3E3OFpKQjVnN0ZxQ2poSDk0RWdKQmM4LWc3LWxyS19uYkxrZTBrWEhva0tjVXcxWWx1TjNwTXc?oc=5",
       "date": "Thu, 12 Mar 2026 07:00:00 GMT",
       "source": "RTVI",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "«Отключения станут нормой»: почему в Москве не работает белый список сервисов RTVI"
     },
     {
@@ -260,7 +264,9 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQQzRlZTRuYjZRbXdWTEtfem44dm5lUzVuQ3NDUDRFdHdOempUUld4Nnp1VDllb09EblZfRHZVbjFyVzVLWkREaHdOOGpDeUHSAUtBVV95cUxPdHdQYWFwNTA3VkVTbm5xRlJGaXlqaGsySktVWjRDdnhHR1J4c3ZNeTc2eE9tWUZOR3oyUFJfZjU3Q2NoRTBrUHctb1k?oc=5",
       "date": "Thu, 07 May 2026 07:00:00 GMT",
       "source": "Интерфакс",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве 9 мая полностью ограничат мобильный интернет, в том числе на \"белый список\" Интерфакс"
     },
     {
@@ -268,7 +274,9 @@
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5BZEswNlMyRjdPTDlQVVlrWEl2ckpybkt5d2hXZlZUbUYtQWlFRmQ1YlJ1aDNHQl9mV0dHVy1Na2NtaE5iX2JaemlTQTA?oc=5",
       "date": "Thu, 07 May 2026 07:00:00 GMT",
       "source": "Т—Ж",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "9 мая в Москве полностью отключат мобильный интер­нет — отправка смс и «белые списки» работать не будут Т—Ж"
     },
     {
@@ -284,7 +292,9 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeXhvVHFoS05MWlNtRlhERFJvc2F3bGZQN0doU3RqeTZSZUZKSTlKaWhEODZMRWg3MFItbHM2RDhSQlhrQ0VuaWVTMGlzVi1ScFRsTkpZQ0swNkZUbzdmdGVGQVhEcGhza0poanYxYWZraDRhdkpEZV9RZzF2YlYyRi1lOWlXclNjNk84VXBvWEZIMHNfLWlVM0cwSDBBY2tPaWFHMnJYSXJBczVPd0FWc09XQ1RXV0nSAbwBQVVfeXFMTVVldzIwa2pabG14RGJGSmN6OHcybEdNRlJQVGpwSEFEY1phdW9JcVMzRHJqbHNaZWNyR01jeG9zVXZ1VWJ4bUFITml5RGp5RE4teEtCUjIydjA2YkhqdXNZOWtXSmw5aHd3RnFqQXVoTE9nT0FMWVNuQ2dZOUFlSjNkOGYwLW1IMDBhT3phUnpGMXBQT2xOVUVVdjZOUUtIQUdvRks4ekZUQzZKZjBWOGR3NEZlUVpuTkFwRTg?oc=5",
       "date": "Sun, 22 Mar 2026 07:00:00 GMT",
       "source": "Meduza",
-      "regions": [],
+      "regions": [
+        "Санкт-Петербург"
+      ],
       "summary": "В Петербурге пропал мобильный интернет. Открываются только ресурсы из «белого списка» Meduza"
     },
     {
@@ -292,7 +302,9 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZEhySm91MXM0WURfdDZuMGdEME9TelhNbGZfS2hpRmV6Zjd4VGpIa2duTUJFdkhGaUE2MmpMdWZLdlVET0NLQU5fYnhTYTJBcUM4RXFocGhwUkRfRkpQcmdUUWFCYlJaTFpPNWM3MF9FRzB3R3Y5QjFVSDM2SUNPTEZiRFFxVEFNNUFUSWQ4RlYtRGtUYnN6ekowcFJqQQ?oc=5",
       "date": "Sun, 22 Mar 2026 07:00:00 GMT",
       "source": "RTVI",
-      "regions": [],
+      "regions": [
+        "Санкт-Петербург"
+      ],
       "summary": "В Петербург пришли \"белые списки\": что происходит с интернетом в городе RTVI"
     },
     {
@@ -308,7 +320,9 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQV2FUNThVUE1tV0hMd0dvdHViSkY2b2RUb2Z6Vjd0ems1RUNyc05aMWVmMHU1eVRRRS1ZcXc2WGY1c1EwNmI3SGUwWHhoSWJjTmxmNE5MaTlvOTFhR1FHaVFHMFRSTEI3UUJfLWViMnV0X09aejlQckVseVRsaW5XZmpVYXBQVjVBZXR3UXdrd3pRRFlPRExDNnJB?oc=5",
       "date": "Sat, 21 Mar 2026 07:00:00 GMT",
       "source": "RTVI",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "Домашний интернет замедлится: в Москве массово внедряют \"белые списки\" RTVI"
     },
     {
@@ -486,7 +500,9 @@
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5heURMTXVRdGhqdXc0dURHRS14SXlSTkg2NDlmdjhVbFVSOEszclh2WDUyMUZ6amtvemltMEs5SkhKazN6YmVr0gFPQVVfeXFMTmwtblFvZzFWSE5IV2RtdDRBbUh0NmU1UmtrdjFHcEw2eDJhd3N4QjdueXh2NDZ1cTBtOWlJdUhKMGR1NG81RUU4WWpGUmo5bw?oc=5",
       "date": "Fri, 13 Nov 2026 07:21:29 GMT",
       "source": "Оренбург Медиа",
-      "regions": [],
+      "regions": [
+        "Оренбургская область"
+      ],
       "summary": "Ограничения мобильного интернета в Оренбурге. Работают «белые списки» Оренбург Медиа"
     },
     {
@@ -494,7 +510,9 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdVpOYjBKWmdnQWhOYU1ENUJkczcwNWlvYVAwLTd4a09lMHI0aHd6ekJVQ1JFaG1BNzF1Wm1Sd29ReWlBNkd2V3FVVWVJU0dDVzBDUU5ad2VncmQyYzk3QUxXTXhBS05mcEdDZ1VodDF0aVZYZ2NLQVE3T2U2UVQzYk9tbk9YZWM?oc=5",
       "date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source": "Forbes.ru",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве заработали «белые списки» сайтов Forbes.ru"
     },
     {
@@ -502,7 +520,9 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5UbjhrMTR5MG1TbF85UHlzWUVPdWZ6T1JqcEtaMXRfcnk5ZEJRSl9Ucnp0VmVnblJKN3A0QmNlSzdhY0c2aDFBRnlNWWZNbTBIS05feFhvUGNsdkRpNEtHeF8zVkJMSmdtWk1MeUQ4cDNtU0F00gF6QVVfeXFMUEFxWVNBWjZUVmdmb0dmY2dTUVU1a3B2NHhFYWxVM3RFbVpQZ2t3NVhfNHg2MGpfWEhIZnZ6TWl3VU9yNXR6emxqN19xVUh1ZkJwN1VBWGhvbWE3ZExkWUR2aFY0TVFYUFRDU1RyeDB5YnJBRFo0b3VrNlE?oc=5",
       "date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source": "Meduza",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве заработали «белые списки» Meduza"
     },
     {
@@ -510,7 +530,9 @@
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5QOGM4N283VEkySjVBdTFodmN0Rk50cXhfMGtoQTdyOF9Vbng2UjB5aEJzUTZqNTJlbFB4R2NPb3drYW5Yc2dHMVQzZ0JfV2NxWjJUdXBGaw?oc=5",
       "date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source": "Банки.ру",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве запустили «белые списки»: какие сервисы останутся доступны при отключениях Банки.ру"
     },
     {
@@ -518,7 +540,9 @@
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWHYxdHhEQ25JSUxmOElwTTFCQ0ZqWHAxM1U4NzdQNU1GbGVXQk5zZHZUZUgxV1lkeF8wQnhzdWhMT0ZJa1ZkWjBpamlpRXJ5VlBQOGZ5OVBObWVLYTlyQ0Y0UVY4d2c5Y200TEFJbjBmYWs1S0dWa1dwQ19sQklKQnpSdW9pTDJ2V1NYQmRTaUNFcXhpTFJMSTYwc0tfdU5aSTVOTGdsRWZmUdIBqgFBVV95cUxOUTdzY0h0MGZtMElDcXFaZ0pLQWZIVkxYbTliaS1RRTc4UTBJWU80cFktUUdPVzRrNUZ2dkIwNUFKZ044ZUxYU0stTXNYS29iMThLdTFka1JkTlN0bXB2SUI3Y21Sblc0X2k2OHpMS2M0a3EzMXdaMGFldHdhQmNyTFNpNUxaUFRVTlQtR0RPYmNKU0tiWS00NlE4QnJ4LWx2b0lEWV9VRk94QQ?oc=5",
       "date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source": "DW.com",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве заработали \"белые списки\" сайтов DW.com"
     },
     {
@@ -526,7 +550,9 @@
       "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9hTE93eVFhQVhNQzZJLTl3SlhZZzk0Y0gtSVNLaGdSYTlSeHB2UlUwcG5yNlNMUkdqQnh5Tk1NcmpUZU0?oc=5",
       "date": "Fri, 13 Mar 2026 07:00:00 GMT",
       "source": "The Insider",
-      "regions": [],
+      "regions": [
+        "Москва"
+      ],
       "summary": "В Москве заработали белые списки для мобильного интернета — «Коммерсантъ» The Insider"
     },
     {
