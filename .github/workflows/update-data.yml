@@ -9,6 +9,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+# Monitor-Runet regional pages are paced by the collector (about one request per second).
 jobs:
   collect:
     runs-on: ubuntu-latest
