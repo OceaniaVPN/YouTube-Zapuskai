@@ -108,12 +108,12 @@ def fetch_text(url):
 
 def parse_monitor_runet_page(page):
     text = clean(re.sub(r"<[^>]+>", " ", page))
-    text = re.sub(r"\\s+", " ", text)
-    restrictions = re.search(r"(\\d{1,2})\\s+из\\s+14\\s+дней\\s+с\\s+ограничениями", text, re.I)
-    whitelist_days = re.search(r"белые списки\\s*[—–-]\\s*(\\d{1,2})\\s+дн", text, re.I)
+    text = re.sub(r"\s+", " ", text)
+    restrictions = re.search(r"(\d{1,2})\s+из\s+14\s+дней\s+с\s+ограничениями", text, re.I)
+    whitelist_days = re.search(r"белые списки\s*[—–-]\s*(\d{1,2})\s+дн", text, re.I)
     if not restrictions and not whitelist_days:
         return None
-    last_day = re.search(r"последний отмеченный день\\s*[—:]\\s*(\\d{1,2}\\s+[а-яё]+)", text, re.I)
+    last_day = re.search(r"последний отмеченный день\s*[—:]\s*(\d{1,2}\s+[а-яё]+)", text, re.I)
     return {
         "restrictionDays": int(restrictions.group(1)) if restrictions else None,
         "periodDays": 14 if restrictions else None,
