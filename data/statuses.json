@@ -1,6 +1,633 @@
 {
-  "updatedAt": "2026-11-19T05:37:29+00:00",
+  "updatedAt": "2026-11-19T05:56:08+00:00",
   "regions": {
-    "оренбургская область": "possible"
+    "москва": "possible",
+    "санкт-петербург": "possible",
+    "московская область": "possible",
+    "ленинградская область": "possible",
+    "республика татарстан": "possible",
+    "республика башкортостан": "possible",
+    "краснодарский край": "possible",
+    "свердловская область": "possible",
+    "ростовская область": "possible",
+    "челябинская область": "possible",
+    "нижегородская область": "possible",
+    "самарская область": "possible",
+    "красноярский край": "possible",
+    "новосибирская область": "possible",
+    "воронежская область": "possible",
+    "белгородская область": "possible",
+    "курская область": "possible",
+    "брянская область": "possible",
+    "пермский край": "possible",
+    "волгоградская область": "possible",
+    "саратовская область": "possible",
+    "оренбургская область": "possible",
+    "иркутская область": "possible",
+    "кемеровская область": "possible",
+    "тюменская область": "possible",
+    "омская область": "possible",
+    "алтайский край": "possible",
+    "ставропольский край": "possible",
+    "республика дагестан": "possible",
+    "чеченская республика": "possible",
+    "тульская область": "possible",
+    "калужская область": "possible",
+    "ярославская область": "possible",
+    "владимирская область": "possible",
+    "тверская область": "possible",
+    "смоленская область": "possible",
+    "рязанская область": "possible",
+    "липецкая область": "possible",
+    "тамбовская область": "possible",
+    "орловская область": "possible",
+    "ивановская область": "possible",
+    "костромская область": "possible",
+    "пензенская область": "possible",
+    "ульяновская область": "possible",
+    "удмуртская республика": "possible",
+    "чувашская республика": "possible",
+    "республика марий эл": "possible",
+    "республика мордовия": "possible",
+    "вологодская область": "possible",
+    "архангельская область": "possible",
+    "мурманская область": "possible",
+    "республика карелия": "possible",
+    "республика коми": "possible",
+    "новгородская область": "possible",
+    "псковская область": "possible",
+    "калининградская область": "possible",
+    "курганская область": "possible",
+    "ямало-ненецкий автономный округ": "possible",
+    "томская область": "possible",
+    "республика хакасия": "possible",
+    "республика тыва": "possible",
+    "республика бурятия": "possible",
+    "забайкальский край": "possible",
+    "республика саха (якутия)": "possible",
+    "амурская область": "possible",
+    "хабаровский край": "possible",
+    "приморский край": "possible",
+    "сахалинская область": "possible",
+    "камчатский край": "possible",
+    "астраханская область": "possible",
+    "республика адыгея": "possible",
+    "карачаево-черкесская республика": "possible",
+    "кабардино-балкарская республика": "possible"
+  },
+  "monitorRunet": {
+    "москва": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/moskva/"
+    },
+    "санкт-петербург": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sankt-peterburg/"
+    },
+    "московская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/moskovskaya-oblast/"
+    },
+    "ленинградская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/leningradskaya-oblast/"
+    },
+    "республика татарстан": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tatarstan/"
+    },
+    "республика башкортостан": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/bashkortostan/"
+    },
+    "краснодарский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/krasnodarskiy-kray/"
+    },
+    "свердловская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sverdlovskaya-oblast/"
+    },
+    "ростовская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/rostovskaya-oblast/"
+    },
+    "челябинская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chelyabinskaya-oblast/"
+    },
+    "нижегородская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/nizhegorodskaya-oblast/"
+    },
+    "самарская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/samarskaya-oblast/"
+    },
+    "красноярский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/krasnoyarskiy-kray/"
+    },
+    "новосибирская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/novosibirskaya-oblast/"
+    },
+    "воронежская область": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/voronezhskaya-oblast/"
+    },
+    "белгородская область": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/belgorodskaya-oblast/"
+    },
+    "курская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kurskaya-oblast/"
+    },
+    "брянская область": {
+      "restrictionDays": 8,
+      "periodDays": 14,
+      "whitelistDays": 8,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/bryanskaya-oblast/"
+    },
+    "пермский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/permskiy-kray/"
+    },
+    "волгоградская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/volgogradskaya-oblast/"
+    },
+    "саратовская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/saratovskaya-oblast/"
+    },
+    "оренбургская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/orenburgskaya-oblast/"
+    },
+    "иркутская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/irkutskaya-oblast/"
+    },
+    "кемеровская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kemerovskaya-oblast/"
+    },
+    "тюменская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tyumenskaya-oblast/"
+    },
+    "омская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/omskaya-oblast/"
+    },
+    "алтайский край": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/altayskiy-kray/"
+    },
+    "ставропольский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/stavropolskiy-kray/"
+    },
+    "республика дагестан": {
+      "restrictionDays": 9,
+      "periodDays": 14,
+      "whitelistDays": 9,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/dagestan/"
+    },
+    "чеченская республика": {
+      "restrictionDays": 4,
+      "periodDays": 14,
+      "whitelistDays": 4,
+      "lastNotedDay": "15 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chechnya/"
+    },
+    "тульская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tulskaya-oblast/"
+    },
+    "калужская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kaluzhskaya-oblast/"
+    },
+    "ярославская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/yaroslavskaya-oblast/"
+    },
+    "владимирская область": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/vladimirskaya-oblast/"
+    },
+    "тверская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tverskaya-oblast/"
+    },
+    "смоленская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/smolenskaya-oblast/"
+    },
+    "рязанская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ryazanskaya-oblast/"
+    },
+    "липецкая область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/lipetskaya-oblast/"
+    },
+    "тамбовская область": {
+      "restrictionDays": 7,
+      "periodDays": 14,
+      "whitelistDays": 7,
+      "lastNotedDay": "13 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tambovskaya-oblast/"
+    },
+    "орловская область": {
+      "restrictionDays": 9,
+      "periodDays": 14,
+      "whitelistDays": 9,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/orlovskaya-oblast/"
+    },
+    "ивановская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ivanovskaya-oblast/"
+    },
+    "костромская область": {
+      "restrictionDays": 3,
+      "periodDays": 14,
+      "whitelistDays": 3,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kostromskaya-oblast/"
+    },
+    "пензенская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/penzenskaya-oblast/"
+    },
+    "ульяновская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ulyanovskaya-oblast/"
+    },
+    "удмуртская республика": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/udmurtiya/"
+    },
+    "чувашская республика": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chuvashiya/"
+    },
+    "республика марий эл": {
+      "restrictionDays": 4,
+      "periodDays": 14,
+      "whitelistDays": 4,
+      "lastNotedDay": "10 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/mariy-el/"
+    },
+    "республика мордовия": {
+      "restrictionDays": 7,
+      "periodDays": 14,
+      "whitelistDays": 7,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/mordoviya/"
+    },
+    "вологодская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/vologodskaya-oblast/"
+    },
+    "архангельская область": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/arkhangelskaya-oblast/"
+    },
+    "мурманская область": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/murmanskaya-oblast/"
+    },
+    "республика карелия": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kareliya/"
+    },
+    "республика коми": {
+      "restrictionDays": 10,
+      "periodDays": 14,
+      "whitelistDays": 10,
+      "lastNotedDay": "15 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/komi/"
+    },
+    "новгородская область": {
+      "restrictionDays": 6,
+      "periodDays": 14,
+      "whitelistDays": 6,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/novgorodskaya-oblast/"
+    },
+    "псковская область": {
+      "restrictionDays": 6,
+      "periodDays": 14,
+      "whitelistDays": 6,
+      "lastNotedDay": "16 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/pskovskaya-oblast/"
+    },
+    "калининградская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kaliningradskaya-oblast/"
+    },
+    "курганская область": {
+      "restrictionDays": 9,
+      "periodDays": 14,
+      "whitelistDays": 9,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kurganskaya-oblast/"
+    },
+    "ямало-ненецкий автономный округ": {
+      "restrictionDays": 13,
+      "periodDays": 14,
+      "whitelistDays": 13,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/yamalo-nenetskiy-ao/"
+    },
+    "томская область": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tomskaya-oblast/"
+    },
+    "республика алтай": {
+      "restrictionDays": 4,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/altay/"
+    },
+    "республика хакасия": {
+      "restrictionDays": 10,
+      "periodDays": 14,
+      "whitelistDays": 10,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/khakasiya/"
+    },
+    "республика тыва": {
+      "restrictionDays": 4,
+      "periodDays": 14,
+      "whitelistDays": 4,
+      "lastNotedDay": "12 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tyva/"
+    },
+    "республика бурятия": {
+      "restrictionDays": 9,
+      "periodDays": 14,
+      "whitelistDays": 9,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/buryatiya/"
+    },
+    "забайкальский край": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/zabaykalskiy-kray/"
+    },
+    "республика саха (якутия)": {
+      "restrictionDays": 12,
+      "periodDays": 14,
+      "whitelistDays": 12,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sakha-yakutiya/"
+    },
+    "амурская область": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/amurskaya-oblast/"
+    },
+    "хабаровский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/khabarovskiy-kray/"
+    },
+    "приморский край": {
+      "restrictionDays": 14,
+      "periodDays": 14,
+      "whitelistDays": 14,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/primorskiy-kray/"
+    },
+    "сахалинская область": {
+      "restrictionDays": 11,
+      "periodDays": 14,
+      "whitelistDays": 11,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sakhalinskaya-oblast/"
+    },
+    "магаданская область": {
+      "restrictionDays": 8,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/magadanskaya-oblast/"
+    },
+    "камчатский край": {
+      "restrictionDays": 7,
+      "periodDays": 14,
+      "whitelistDays": 7,
+      "lastNotedDay": "15 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kamchatskiy-kray/"
+    },
+    "республика калмыкия": {
+      "restrictionDays": 0,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": null,
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kalmykiya/"
+    },
+    "астраханская область": {
+      "restrictionDays": 10,
+      "periodDays": 14,
+      "whitelistDays": 10,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/astrakhanskaya-oblast/"
+    },
+    "республика адыгея": {
+      "restrictionDays": 8,
+      "periodDays": 14,
+      "whitelistDays": 8,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/adygeya/"
+    },
+    "карачаево-черкесская республика": {
+      "restrictionDays": 3,
+      "periodDays": 14,
+      "whitelistDays": 3,
+      "lastNotedDay": "14 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/karachaevo-cherkesiya/"
+    },
+    "кабардино-балкарская республика": {
+      "restrictionDays": 6,
+      "periodDays": 14,
+      "whitelistDays": 6,
+      "lastNotedDay": "17 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kabardino-balkariya/"
+    },
+    "республика ингушетия": {
+      "restrictionDays": 3,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": "14 ноября",
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ingushetiya/"
+    },
+    "республика крым": {
+      "restrictionDays": 0,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": null,
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/krym/"
+    },
+    "севастополь": {
+      "restrictionDays": 0,
+      "periodDays": 14,
+      "whitelistDays": null,
+      "lastNotedDay": null,
+      "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sevastopol/"
+    }
   }
 }
