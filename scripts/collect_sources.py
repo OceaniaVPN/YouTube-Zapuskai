@@ -3,7 +3,8 @@
 Automatic matches are candidates only; confirmed/none statuses require manual review.
 """
 import json, os, re, time, html
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
@@ -42,15 +43,15 @@ REGIONS = {
     "Курская область":["Курская область"], "Ленинградская область":["Ленинградская область"],
     "Липецкая область":["Липецкая область"], "Магаданская область":["Магаданская область"],
     "Республика Марий Эл":["Марий Эл"], "Республика Мордовия":["Мордовия"],
-    "Москва":["Москва"], "Московская область":["Московская область","Подмосковье"],
+    "Москва":["Москва","Москве"], "Московская область":["Московская область","Подмосковье"],
     "Мурманская область":["Мурманская область"], "Ненецкий автономный округ":["Ненецкий автономный округ"],
     "Нижегородская область":["Нижегородская область"], "Новгородская область":["Новгородская область"],
     "Новосибирская область":["Новосибирская область"], "Омская область":["Омская область"],
-    "Оренбургская область":["Оренбургская область"], "Орловская область":["Орловская область"],
+    "Оренбургская область":["Оренбургская область","Оренбург"], "Орловская область":["Орловская область"],
     "Пензенская область":["Пензенская область"], "Пермский край":["Пермский край"],
     "Приморский край":["Приморский край"], "Псковская область":["Псковская область"],
     "Ростовская область":["Ростовская область"], "Рязанская область":["Рязанская область"],
-    "Самарская область":["Самарская область"], "Санкт-Петербург":["Санкт-Петербург"],
+    "Самарская область":["Самарская область","Самаре"], "Санкт-Петербург":["Санкт-Петербург","Петербург","Петербурге"],
     "Саратовская область":["Саратовская область"], "Республика Саха (Якутия)":["Якутия"],
     "Сахалинская область":["Сахалинская область"], "Свердловская область":["Свердловская область"],
     "Севастополь":["Севастополь"], "Смоленская область":["Смоленская область"],
@@ -109,6 +110,8 @@ def main():
     api_ok = False
     api_generated = None
     api_region_statuses = {}
+    items = []
+    api_region_total = 0
 
     # Primary structured source: shutdown.fyi public API (CC BY 4.0).
     try:
@@ -116,6 +119,7 @@ def main():
         items = payload.get("items")
         if not isinstance(items, list):
             raise ValueError("В ответе API отсутствует массив items")
+        api_region_total = sum(1 for item in items if item.get("kind") == "region")
         api_ok = True
         successful_sources += 1
         api_generated = payload.get("generatedAt")
@@ -241,6 +245,53 @@ def main():
     if api_ok:
         candidates.update(api_region_statuses)
 
+    # Add orange candidates only for recent regional reports that explicitly
+    # connect whitelist language with mobile-internet restrictions/outages.
+    # A generic story about a service being added to the federal whitelist
+    # must not be mistaken for a regional mobile-internet restriction.
+    aliases = {}
+    for canonical, names in REGIONS.items():
+        aliases[norm_region(canonical)] = canonical
+        for alias in names:
+            aliases[norm_region(alias)] = canonical
+
+    whitelist_pattern = re.compile(r"бел\w*\s+списк\w*|white[\s-]?list", re.I)
+    mobile_context_pattern = re.compile(
+        r"мобильн\w*\s+интернет|интернет.{0,70}(?:отключ|огранич|не работает)|"
+        r"(?:отключ|огранич).{0,70}интернет|бел\w*\s+списк\w*.{0,100}(?:мобильн|отключ|огранич)|"
+        r"(?:мобильн|отключ|огранич).{0,100}бел\w*\s+списк",
+        re.I
+    )
+    cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+    region_report_names = set()
+    for report in collected.values():
+        story_text = (report.get("title", "") + " " + report.get("summary", "")).lower().replace("ё", "е")
+        if not whitelist_pattern.search(story_text) or not mobile_context_pattern.search(story_text):
+            continue
+        published = None
+        raw_date = report.get("date", "")
+        try:
+            published = parsedate_to_datetime(raw_date)
+        except (TypeError, ValueError, OverflowError):
+            try:
+                published = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+            except (TypeError, ValueError, AttributeError):
+                published = None
+        if published is None:
+            continue
+        if published.tzinfo is None:
+            published = published.replace(tzinfo=timezone.utc)
+        if published < cutoff:
+            continue
+        for reported_region in report.get("regions", []):
+            canonical = aliases.get(norm_region(reported_region))
+            if not canonical:
+                continue
+            key = canonical.lower()
+            if candidates.get(key) not in ("confirmed", "none"):
+                candidates[key] = "possible"
+            region_report_names.add(canonical)
+
     manual_path = os.path.join(DATA, "manual-statuses.json")
     try:
         with open(manual_path, encoding="utf-8") as f:
@@ -262,7 +313,9 @@ def main():
         "reportsFound": len(collected),
         "shutdownApiOk": api_ok,
         "shutdownApiUpdatedAt": api_generated,
+        "shutdownApiRegionsTotal": api_region_total,
         "shutdownApiRegionsWithSignals": len(api_region_statuses),
+        "regionReportsFound": len(region_report_names),
         "attribution": "shutdown.fyi — CC BY 4.0"
     })
     with open(os.path.join(DATA, "reports.json"), "w", encoding="utf-8") as f:
@@ -274,7 +327,7 @@ def main():
     with open(monitor_path, "w", encoding="utf-8") as f:
         json.dump(monitor, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("Saved", len(reports), "reports and", len(candidates), "region candidates; API:", api_ok)
+    print("Saved", len(reports), "reports and", len(candidates), "region candidates;", len(region_report_names), "recent region reports; API regions:", api_region_total)
 
 if __name__ == "__main__":
     main()
