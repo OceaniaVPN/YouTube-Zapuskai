@@ -100,6 +100,28 @@ def fetch_json(url):
     with urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
+def fetch_text(url):
+    req = Request(url, headers={"User-Agent":"WhitelistRFMonitor/1.0 (+https://whitelist-rf.apruxdomain.space)"})
+    with urlopen(req, timeout=12) as response:
+        return response.read().decode("utf-8", "replace")
+
+
+def parse_monitor_runet_page(page):
+    text = clean(re.sub(r"<[^>]+>", " ", page))
+    text = re.sub(r"\\s+", " ", text)
+    restrictions = re.search(r"(\\d{1,2})\\s+из\\s+14\\s+дней\\s+с\\s+ограничениями", text, re.I)
+    whitelist_days = re.search(r"белые списки\\s*[—–-]\\s*(\\d{1,2})\\s+дн", text, re.I)
+    if not restrictions and not whitelist_days:
+        return None
+    last_day = re.search(r"последний отмеченный день\\s*[—:]\\s*(\\d{1,2}\\s+[а-яё]+)", text, re.I)
+    return {
+        "restrictionDays": int(restrictions.group(1)) if restrictions else None,
+        "periodDays": 14 if restrictions else None,
+        "whitelistDays": int(whitelist_days.group(1)) if whitelist_days else None,
+        "lastNotedDay": last_day.group(1) if last_day else None
+    }
+
+
 def norm_region(value):
     return re.sub(r"[^a-zа-я0-9]+", " ", (value or "").lower().replace("ё", "е")).strip()
 
@@ -112,6 +134,12 @@ def main():
     api_region_statuses = {}
     items = []
     api_region_total = 0
+    runet_region_data = {}
+    runet_region_statuses = {}
+    runet_regions_with_whitelist = set()
+    runet_pages_total = 0
+    runet_pages_ok = 0
+    runet_page_errors = 0
 
     # Primary structured source: shutdown.fyi public API (CC BY 4.0).
     try:
@@ -160,6 +188,40 @@ def main():
     except Exception as exc:
         errors.append("shutdown.fyi API: " + type(exc).__name__ + ": " + str(exc))
         print("API error:", errors[-1])
+
+    # Region pages publish the separate 14-day "Монитор Рунета" observations.
+    # Pace requests below the documented API limit of 60 requests per minute.
+    if api_ok:
+        region_items = [x for x in items if x.get("kind") == "region"]
+        runet_pages_total = len(region_items)
+        for region_item in region_items:
+            canonical = aliases.get(norm_region(region_item.get("name") or ""))
+            slug = region_item.get("slug")
+            if not canonical or not slug:
+                continue
+            page_url = "https://shutdown.fyi/kogda-vklyuchat-internet/" + quote(str(slug), safe="-") + "/"
+            try:
+                page_html = fetch_text(page_url)
+                runet_pages_ok += 1
+                page_data = parse_monitor_runet_page(page_html)
+                if page_data:
+                    page_data["url"] = page_url
+                    runet_region_data[canonical.lower()] = page_data
+                    white_days = page_data.get("whitelistDays")
+                    if white_days is not None and white_days > 0:
+                        runet_region_statuses[canonical.lower()] = "possible"
+                        runet_regions_with_whitelist.add(canonical)
+                    elif white_days == 0:
+                        runet_region_statuses[canonical.lower()] = "none"
+            except Exception as exc:
+                runet_page_errors += 1
+                print("Monitor Runeta page failed:", slug, type(exc).__name__)
+            time.sleep(1.1)
+
+        if runet_pages_ok:
+            successful_sources += 1
+        if runet_page_errors:
+            errors.append("Монитор Рунета: недоступно страниц " + str(runet_page_errors) + " из " + str(runet_pages_total))
 
     # Recent incident feed is supplementary; API status remains usable if it fails.
     try:
@@ -228,7 +290,7 @@ def main():
             "status": "error", "lastAttemptAt": now,
             "error": "Не удалось получить данные ни из одного источника.",
             "details": errors, "successfulFeeds": 0,
-            "totalFeeds": 5, "reportsFound": 0
+            "totalFeeds": 6, "reportsFound": 0
         })
         with open(monitor_path, "w", encoding="utf-8") as f:
             json.dump(monitor, f, ensure_ascii=False, indent=2)
@@ -241,9 +303,13 @@ def main():
     merged.update({r.get("url"): r for r in collected.values() if r.get("url")})
     reports = sorted(merged.values(), key=lambda x: x.get("date", ""), reverse=True)[:150]
 
-    candidates = dict(previous_statuses) if not api_ok else {}
+    preserve_previous = (not api_ok) or (
+        runet_pages_total > 0 and len(runet_region_data) < max(1, runet_pages_total // 2)
+    )
+    candidates = dict(previous_statuses) if preserve_previous else {}
     if api_ok:
         candidates.update(api_region_statuses)
+    candidates.update(runet_region_statuses)
 
     # Add orange candidates only for recent regional reports that explicitly
     # connect whitelist language with mobile-internet restrictions/outages.
@@ -309,20 +375,24 @@ def main():
         "error": None if not errors else "Часть источников недоступна; успешные источники сохранены.",
         "details": errors,
         "successfulFeeds": successful_sources,
-        "totalFeeds": 5,
+        "totalFeeds": 6,
         "reportsFound": len(collected),
         "shutdownApiOk": api_ok,
         "shutdownApiUpdatedAt": api_generated,
         "shutdownApiRegionsTotal": api_region_total,
         "shutdownApiRegionsWithSignals": len(api_region_statuses),
-        "regionReportsFound": len(region_report_names),
-        "attribution": "shutdown.fyi — CC BY 4.0"
+        "monitorRunetPagesFetched": runet_pages_ok,
+        "monitorRunetPagesTotal": runet_pages_total,
+        "monitorRunetRegionsWithData": len(runet_region_data),
+        "monitorRunetRegionsWithWhitelist": len(runet_regions_with_whitelist),
+        "regionReportsFound": len(region_report_names | runet_regions_with_whitelist),
+        "attribution": "shutdown.fyi / Монитор Рунета — На связи"
     })
     with open(os.path.join(DATA, "reports.json"), "w", encoding="utf-8") as f:
         json.dump({"updatedAt": now, "reports": reports}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(os.path.join(DATA, "statuses.json"), "w", encoding="utf-8") as f:
-        json.dump({"updatedAt": now, "regions": candidates}, f, ensure_ascii=False, indent=2)
+        json.dump({"updatedAt": now, "regions": candidates, "monitorRunet": runet_region_data}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(monitor_path, "w", encoding="utf-8") as f:
         json.dump(monitor, f, ensure_ascii=False, indent=2)
