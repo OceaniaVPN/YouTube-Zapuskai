@@ -144,8 +144,113 @@ def parse_monitor_runet_page(page):
     }
 
 
+def parse_taucloud_page(page):
+    plain = clean(re.sub(r"<[^>]+>", " ", page))
+    plain = re.sub(r"\s+", " ", plain)
+    stamp = re.search(r"Данные на\s+(\d{1,2}:\d{2})\s+МСК,\s+(\d{1,2})\s+([а-яё]+)\s+(\d{4})\s*г", plain, re.I)
+    checked_at = None
+    if stamp:
+        months = {
+            "января":1, "февраля":2, "марта":3, "апреля":4, "мая":5, "июня":6,
+            "июля":7, "августа":8, "сентября":9, "октября":10, "ноября":11, "декабря":12
+        }
+        try:
+            hour, minute = map(int, stamp.group(1).split(":"))
+            checked_at = datetime(
+                int(stamp.group(4)), months[stamp.group(3).lower()], int(stamp.group(2)),
+                hour, minute, tzinfo=timezone(timedelta(hours=3))
+            )
+        except (ValueError, KeyError):
+            checked_at = None
+
+    districts = {}
+    rows = re.findall(r"<tr\b[^>]*>(.*?)</tr>", page, re.I | re.S)
+    header = None
+    for row in rows:
+        cells = [clean(cell) for cell in re.findall(r"<t[hd]\b[^>]*>(.*?)</t[hd]>", row, re.I | re.S)]
+        if not cells:
+            continue
+        if cells[0].strip().lower().startswith("оператор") and all(d in cells for d in ("ЦФО","СЗФО","ЮФО","СКФО","ПФО","УФО","СФО","ДФО")):
+            header = cells
+            continue
+        if header and len(cells) >= len(header):
+            for idx, district in enumerate(header[1:], start=1):
+                if district not in TAUCLOUD_DISTRICTS:
+                    continue
+                value = cells[idx].lower()
+                entry = districts.setdefault(district, {"enabled":0, "disabled":0})
+                if "включены" in value:
+                    entry["enabled"] += 1
+                elif "выключены" in value:
+                    entry["disabled"] += 1
+
+    for district in TAUCLOUD_DISTRICTS:
+        if district in districts and districts[district]["enabled"] + districts[district]["disabled"] > 0:
+            continue
+        short = "KGD" if district == "Калининград" else district
+        match = re.search(r"(?<![A-Za-zА-Яа-я])" + re.escape(short) + r"\s+(\d{1,3})%", plain, re.I)
+        if match:
+            districts[district] = {"percentage":int(match.group(1)), "enabled":None, "disabled":None}
+
+    if not checked_at or not districts:
+        raise ValueError("Не удалось разобрать дату или таблицу замеров Taucloud")
+    for district, value in districts.items():
+        if value.get("percentage") is None:
+            measured = value["enabled"] + value["disabled"]
+            value["measuredOperators"] = measured
+            value["percentage"] = round(value["enabled"] * 100 / measured) if measured else None
+        else:
+            value["measuredOperators"] = None
+        value["status"] = (
+            "confirmed" if value.get("percentage") == 100 else
+            "none" if value.get("percentage") == 0 else
+            "possible" if value.get("percentage") is not None else "unknown"
+        )
+    return {
+        "checkedAt": checked_at.astimezone(timezone.utc).isoformat(timespec="minutes"),
+        "url": "https://taucloud.ru/belye-spiski/karta",
+        "districts": districts
+    }
+
+
 def norm_region(value):
     return re.sub(r"[^a-zа-я0-9]+", " ", (value or "").lower().replace("ё", "е")).strip()
+
+REGION_FD = {
+    "Москва":"ЦФО", "Московская область":"ЦФО", "Белгородская область":"ЦФО",
+    "Брянская область":"ЦФО", "Владимирская область":"ЦФО", "Воронежская область":"ЦФО",
+    "Ивановская область":"ЦФО", "Калужская область":"ЦФО", "Костромская область":"ЦФО",
+    "Курская область":"ЦФО", "Липецкая область":"ЦФО", "Орловская область":"ЦФО",
+    "Рязанская область":"ЦФО", "Смоленская область":"ЦФО", "Тамбовская область":"ЦФО",
+    "Тверская область":"ЦФО", "Тульская область":"ЦФО", "Ярославская область":"ЦФО",
+    "Санкт-Петербург":"СЗФО", "Ленинградская область":"СЗФО", "Архангельская область":"СЗФО",
+    "Вологодская область":"СЗФО", "Мурманская область":"СЗФО", "Новгородская область":"СЗФО",
+    "Псковская область":"СЗФО", "Республика Карелия":"СЗФО", "Республика Коми":"СЗФО",
+    "Ненецкий автономный округ":"СЗФО",
+    "Республика Адыгея":"ЮФО", "Республика Калмыкия":"ЮФО", "Краснодарский край":"ЮФО",
+    "Астраханская область":"ЮФО", "Волгоградская область":"ЮФО", "Ростовская область":"ЮФО",
+    "Республика Крым":"Крым", "Севастополь":"Крым", "Калининградская область":"Калининград",
+    "Республика Дагестан":"СКФО", "Республика Ингушетия":"СКФО",
+    "Кабардино-Балкарская Республика":"СКФО", "Карачаево-Черкесская Республика":"СКФО",
+    "Чеченская Республика":"СКФО", "Ставропольский край":"СКФО",
+    "Республика Башкортостан":"ПФО", "Республика Марий Эл":"ПФО", "Республика Мордовия":"ПФО",
+    "Республика Татарстан":"ПФО", "Удмуртская Республика":"ПФО", "Чувашская Республика":"ПФО",
+    "Пермский край":"ПФО", "Нижегородская область":"ПФО", "Оренбургская область":"ПФО",
+    "Пензенская область":"ПФО", "Самарская область":"ПФО", "Саратовская область":"ПФО",
+    "Ульяновская область":"ПФО",
+    "Курганская область":"УФО", "Свердловская область":"УФО", "Тюменская область":"УФО",
+    "Челябинская область":"УФО", "Ханты-Мансийский автономный округ":"УФО",
+    "Ямало-Ненецкий автономный округ":"УФО",
+    "Республика Алтай":"СФО", "Алтайский край":"СФО", "Кемеровская область":"СФО",
+    "Красноярский край":"СФО", "Новосибирская область":"СФО", "Омская область":"СФО",
+    "Томская область":"СФО", "Республика Хакасия":"СФО", "Республика Тыва":"СФО",
+    "Иркутская область":"СФО",
+    "Республика Бурятия":"ДФО", "Забайкальский край":"ДФО", "Республика Саха (Якутия)":"ДФО",
+    "Амурская область":"ДФО", "Еврейская автономная область":"ДФО", "Камчатский край":"ДФО",
+    "Магаданская область":"ДФО", "Приморский край":"ДФО", "Сахалинская область":"ДФО",
+    "Хабаровский край":"ДФО", "Чукотский автономный округ":"ДФО"
+}
+TAUCLOUD_DISTRICTS = ("ЦФО","СЗФО","ЮФО","СКФО","ПФО","УФО","СФО","ДФО","Калининград","Крым")
 
 def main():
     collected = {}
@@ -162,6 +267,7 @@ def main():
     runet_pages_total = 0
     runet_pages_ok = 0
     runet_page_errors = 0
+    taucloud_data = None
 
     # Primary structured source: shutdown.fyi public API (CC BY 4.0).
     try:
@@ -259,6 +365,19 @@ def main():
         if runet_page_errors:
             errors.append("Монитор Рунета: недоступно страниц " + str(runet_page_errors) + " из " + str(runet_pages_total))
 
+    # Independent current modem measurements from Taucloud, by operator and federal district.
+    try:
+        taucloud_page = fetch_text("https://taucloud.ru/belye-spiski/karta")
+        taucloud_data = parse_taucloud_page(taucloud_page)
+        age_seconds = (datetime.now(timezone.utc) - datetime.fromisoformat(taucloud_data["checkedAt"])).total_seconds()
+        if age_seconds < -300 or age_seconds > 6 * 3600:
+            raise ValueError("Замеры Taucloud устарели или имеют некорректную дату")
+        successful_sources += 1
+    except Exception as exc:
+        taucloud_data = None
+        errors.append("Taucloud: " + type(exc).__name__ + ": " + str(exc))
+        print("Taucloud error:", errors[-1])
+
     # Recent incident feed is supplementary; API status remains usable if it fails.
     try:
         incidents_payload = fetch_json("https://shutdown.fyi/api/incidents.json")
@@ -326,7 +445,7 @@ def main():
             "status": "error", "lastAttemptAt": now,
             "error": "Не удалось получить данные ни из одного источника.",
             "details": errors, "successfulFeeds": 0,
-            "totalFeeds": 6, "reportsFound": 0
+            "totalFeeds": 7, "reportsFound": 0
         })
         with open(monitor_path, "w", encoding="utf-8") as f:
             json.dump(monitor, f, ensure_ascii=False, indent=2)
@@ -346,6 +465,35 @@ def main():
     if api_ok:
         candidates.update(api_region_statuses)
     candidates.update(runet_region_statuses)
+
+    # Fresh district-level modem results are the current status layer.
+    # Region-level 14-day Monitor Runeta history remains in the popup for context.
+    taucloud_regions = {}
+    if taucloud_data:
+        taucloud_checked = datetime.fromisoformat(taucloud_data["checkedAt"])
+        tau_fresh = (datetime.now(timezone.utc) - taucloud_checked).total_seconds() <= 6 * 3600
+        if tau_fresh:
+            for region, district in REGION_FD.items():
+                district_data = taucloud_data["districts"].get(district)
+                if not district_data:
+                    continue
+                measured = district_data.get("measuredOperators")
+                pct = district_data.get("percentage")
+                if pct is None or (measured is not None and measured < 2):
+                    continue
+                entry = {
+                    "status": district_data["status"], "district": district,
+                    "percentage": pct,
+                    "activeOperators": district_data.get("enabled"),
+                    "disabledOperators": district_data.get("disabled"),
+                    "measuredOperators": measured,
+                    "checkedAt": taucloud_data["checkedAt"],
+                    "url": taucloud_data["url"],
+                    "level": "district"
+                }
+                taucloud_regions[region.lower()] = entry
+                candidates[region.lower()] = entry["status"]
+
 
     # Add orange candidates only for recent regional reports that explicitly
     # connect whitelist language with mobile-internet restrictions/outages.
@@ -411,7 +559,7 @@ def main():
         "error": None if not errors else "Часть источников недоступна; успешные источники сохранены.",
         "details": errors,
         "successfulFeeds": successful_sources,
-        "totalFeeds": 6,
+        "totalFeeds": 7,
         "reportsFound": len(collected),
         "shutdownApiOk": api_ok,
         "shutdownApiUpdatedAt": api_generated,
@@ -421,6 +569,10 @@ def main():
         "monitorRunetPagesTotal": runet_pages_total,
         "monitorRunetRegionsWithData": len(runet_region_data),
         "monitorRunetRegionsWithWhitelist": len(runet_regions_with_whitelist),
+        "taucloudOk": bool(taucloud_data),
+        "taucloudCheckedAt": taucloud_data.get("checkedAt") if taucloud_data else None,
+        "taucloudMeasuredDistricts": len(taucloud_data.get("districts", {})) if taucloud_data else 0,
+        "taucloudRegionsMapped": len(taucloud_regions),
         "monitorRunetRegionsConfirmedNoRestriction": sum(
             1 for key, data in runet_region_data.items()
             if data.get("lastNotedDate") and
@@ -434,7 +586,7 @@ def main():
         json.dump({"updatedAt": now, "reports": reports}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(os.path.join(DATA, "statuses.json"), "w", encoding="utf-8") as f:
-        json.dump({"updatedAt": now, "regions": candidates, "monitorRunet": runet_region_data}, f, ensure_ascii=False, indent=2)
+        json.dump({"updatedAt": now, "regions": candidates, "monitorRunet": runet_region_data, "taucloud": {"checkedAt": taucloud_data.get("checkedAt"), "url": taucloud_data.get("url"), "districts": taucloud_data.get("districts"), "regions": taucloud_regions} if taucloud_data else {}}, f, ensure_ascii=False, indent=2)
         f.write("\n")
     with open(monitor_path, "w", encoding="utf-8") as f:
         json.dump(monitor, f, ensure_ascii=False, indent=2)
