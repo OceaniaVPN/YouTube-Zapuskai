@@ -1,14 +1,14 @@
 {
   "status": "ok",
-  "lastAttemptAt": "2026-11-21T07:59:03+00:00",
-  "lastSuccessAt": "2026-11-21T07:59:03+00:00",
+  "lastAttemptAt": "2026-11-21T15:56:56+00:00",
+  "lastSuccessAt": "2026-11-21T15:56:56+00:00",
   "error": null,
   "details": [],
   "successfulFeeds": 7,
   "totalFeeds": 7,
-  "reportsFound": 62,
+  "reportsFound": 63,
   "shutdownApiOk": true,
-  "shutdownApiUpdatedAt": "2026-11-21T10:55:00+03:00",
+  "shutdownApiUpdatedAt": "2026-11-21T18:43:00+03:00",
   "shutdownApiRegionsWithSignals": 0,
   "attribution": "shutdown.fyi / Монитор Рунета — На связи",
   "shutdownApiRegionsTotal": 85,
@@ -19,7 +19,7 @@
   "monitorRunetRegionsWithWhitelist": 71,
   "monitorRunetRegionsConfirmedNoRestriction": 0,
   "taucloudOk": true,
-  "taucloudCheckedAt": "2026-11-21T07:57+00:00",
+  "taucloudCheckedAt": "2026-11-21T15:56+00:00",
   "taucloudMeasuredDistricts": 10,
   "taucloudRegionsMapped": 67
 }
