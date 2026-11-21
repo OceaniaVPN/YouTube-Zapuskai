@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T00:36:23+00:00",
+  "updatedAt": "2026-11-21T07:59:03+00:00",
   "reports": [
     {
       "title": "НАУФОР просит включить в «белые списки» сайты и сервисы участников рынка ценных бумаг - Финам",
@@ -628,6 +628,24 @@
       "source": "29.ru",
       "regions": [],
       "summary": "В Архангельской области ограничили работу мобильного интернета: какие сайты входят в белый список 29.ru"
+    },
+    {
+      "title": "«Только белые списки». Петербург снова без стабильного интернета - ФОНТАНКА.ру",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBmd2RFNXNxazFZdWJtSzBvajh5UW5hUk9ma2xKczRIZU5LXzVoZS1fclJxSnNlZUM5OUd2SXlOTXA0RjVLTWozLWdYenFER2VUeEwwMnM4cw?oc=5",
+      "date": "Sat, 21 Nov 2026 07:40:00 GMT",
+      "source": "ФОНТАНКА.ру",
+      "regions": [
+        "Санкт-Петербург"
+      ],
+      "summary": "«Только белые списки». Петербург снова без стабильного интернета ФОНТАНКА.ру"
+    },
+    {
+      "title": "В Каменске с мая ограничен мобильный интернет: только «белые списки» - Techora.ru",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wbGdQMmZMRVhZMVBxTTQ3bXdHYmpfR3U5aG10Vnd5WVdzeTRvNzM1Uk9heW9TNVduSHhELWhsQmhNQ3BHOHZFM0RXX3RERHBTY2dGbU4zOFZrSzBRbExQcEFyX29DdHZ0YzV3dzg1VkgydXUxbGRiOEV3S2s?oc=5",
+      "date": "Sat, 21 Nov 2026 05:41:20 GMT",
+      "source": "Techora.ru",
+      "regions": [],
+      "summary": "В Каменске с мая ограничен мобильный интернет: только «белые списки» Techora.ru"
     },
     {
       "title": "Минцифры: «белый список» актуален только при ограничении мобильного интернета - Объясняем.рф",
