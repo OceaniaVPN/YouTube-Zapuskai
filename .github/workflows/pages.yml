@@ -5,6 +5,9 @@ on:
     paths:
       - "index.html"
       - "data/**"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "404.html"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 permissions:
@@ -25,6 +28,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Validate SEO files
+        run: |
+          test -s sitemap.xml
+          test -s robots.txt
+          test -s 404.html
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
