@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whitelist-rf.apruxdomain.space/sitemap.xml
