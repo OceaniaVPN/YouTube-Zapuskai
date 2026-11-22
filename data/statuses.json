@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T21:27:54+00:00",
+  "updatedAt": "2026-11-22T01:54:24+00:00",
   "regions": {
     "москва": "confirmed",
     "санкт-петербург": "confirmed",
@@ -36,13 +36,11 @@
     "ярославская область": "confirmed",
     "владимирская область": "confirmed",
     "тверская область": "confirmed",
-    "смоленская область": "confirmed",
     "рязанская область": "confirmed",
     "липецкая область": "confirmed",
     "тамбовская область": "confirmed",
     "орловская область": "confirmed",
     "ивановская область": "confirmed",
-    "костромская область": "confirmed",
     "пензенская область": "confirmed",
     "ульяновская область": "confirmed",
     "удмуртская республика": "confirmed",
@@ -74,6 +72,8 @@
     "карачаево-черкесская республика": "confirmed",
     "кабардино-балкарская республика": "confirmed",
     "республика ингушетия": "possible",
+    "костромская область": "confirmed",
+    "смоленская область": "confirmed",
     "республика калмыкия": "possible",
     "республика крым": "possible",
     "севастополь": "possible",
@@ -718,7 +718,7 @@
     }
   },
   "taucloud": {
-    "checkedAt": "2026-11-21T21:26+00:00",
+    "checkedAt": "2026-11-22T01:54+00:00",
     "url": "https://taucloud.ru/belye-spiski/karta",
     "districts": {
       "ЦФО": {
@@ -808,7 +808,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -819,7 +819,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -830,7 +830,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -841,7 +841,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -852,7 +852,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -863,7 +863,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -874,7 +874,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -885,7 +885,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -896,7 +896,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -907,7 +907,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -918,7 +918,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -929,7 +929,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -940,7 +940,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -951,7 +951,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -962,7 +962,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -973,7 +973,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -984,7 +984,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -995,7 +995,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1006,7 +1006,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1017,7 +1017,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1028,7 +1028,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1039,7 +1039,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1050,7 +1050,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1061,7 +1061,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1072,7 +1072,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1083,7 +1083,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1094,7 +1094,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1105,7 +1105,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1116,7 +1116,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1127,7 +1127,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1138,7 +1138,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1149,7 +1149,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1160,7 +1160,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1171,7 +1171,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1182,7 +1182,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1193,7 +1193,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1204,7 +1204,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1215,7 +1215,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1226,7 +1226,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1237,7 +1237,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1248,7 +1248,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1259,7 +1259,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1270,7 +1270,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1281,7 +1281,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1292,7 +1292,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1303,7 +1303,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1314,7 +1314,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1325,7 +1325,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1336,7 +1336,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1347,7 +1347,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1358,7 +1358,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1369,7 +1369,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1380,7 +1380,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1391,7 +1391,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1402,7 +1402,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1413,7 +1413,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1424,7 +1424,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1435,7 +1435,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1446,7 +1446,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1457,7 +1457,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1468,7 +1468,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1479,7 +1479,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1490,7 +1490,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1501,7 +1501,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1512,7 +1512,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1523,7 +1523,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1534,7 +1534,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-21T21:26+00:00",
+        "checkedAt": "2026-11-22T01:54+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       }
