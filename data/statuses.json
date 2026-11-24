@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T03:45:38+00:00",
+  "updatedAt": "2026-11-24T14:32:02+00:00",
   "regions": {
     "москва": "possible",
     "санкт-петербург": "confirmed",
@@ -39,16 +39,20 @@
     "смоленская область": "possible",
     "рязанская область": "possible",
     "липецкая область": "possible",
+    "тамбовская область": "possible",
     "орловская область": "possible",
     "ивановская область": "possible",
+    "костромская область": "possible",
     "пензенская область": "confirmed",
     "ульяновская область": "confirmed",
     "удмуртская республика": "confirmed",
     "чувашская республика": "confirmed",
+    "республика марий эл": "confirmed",
     "республика мордовия": "confirmed",
     "вологодская область": "confirmed",
     "архангельская область": "confirmed",
     "мурманская область": "confirmed",
+    "республика карелия": "confirmed",
     "республика коми": "confirmed",
     "новгородская область": "confirmed",
     "псковская область": "confirmed",
@@ -69,12 +73,9 @@
     "республика адыгея": "possible",
     "карачаево-черкесская республика": "confirmed",
     "кабардино-балкарская республика": "confirmed",
-    "костромская область": "possible",
-    "тамбовская область": "possible",
     "республика калмыкия": "possible",
     "республика крым": "possible",
     "севастополь": "possible",
-    "республика марий эл": "confirmed",
     "ханты-мансийский автономный округ": "possible",
     "республика алтай": "confirmed",
     "республика тыва": "confirmed",
@@ -87,222 +88,222 @@
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/moskva/"
     },
     "санкт-петербург": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sankt-peterburg/"
     },
     "московская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/moskovskaya-oblast/"
     },
     "ленинградская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/leningradskaya-oblast/"
     },
     "республика татарстан": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tatarstan/"
     },
     "республика башкортостан": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/bashkortostan/"
     },
     "краснодарский край": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/krasnodarskiy-kray/"
     },
     "свердловская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sverdlovskaya-oblast/"
     },
     "ростовская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/rostovskaya-oblast/"
     },
     "челябинская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chelyabinskaya-oblast/"
     },
     "нижегородская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/nizhegorodskaya-oblast/"
     },
     "самарская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/samarskaya-oblast/"
     },
     "красноярский край": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/krasnoyarskiy-kray/"
     },
     "новосибирская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/novosibirskaya-oblast/"
     },
     "воронежская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/voronezhskaya-oblast/"
     },
     "белгородская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/belgorodskaya-oblast/"
     },
     "курская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kurskaya-oblast/"
     },
     "брянская область": {
       "restrictionDays": 10,
       "periodDays": 14,
       "whitelistDays": 10,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/bryanskaya-oblast/"
     },
     "пермский край": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/permskiy-kray/"
     },
     "волгоградская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/volgogradskaya-oblast/"
     },
     "саратовская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/saratovskaya-oblast/"
     },
     "оренбургская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/orenburgskaya-oblast/"
     },
     "иркутская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/irkutskaya-oblast/"
     },
     "кемеровская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kemerovskaya-oblast/"
     },
     "тюменская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tyumenskaya-oblast/"
     },
     "омская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/omskaya-oblast/"
     },
     "алтайский край": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/altayskiy-kray/"
     },
     "ставропольский край": {
-      "restrictionDays": 14,
+      "restrictionDays": 13,
       "periodDays": 14,
-      "whitelistDays": 14,
+      "whitelistDays": 13,
       "lastNotedDay": "22 ноября",
       "lastNotedDate": "2026-11-22",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/stavropolskiy-kray/"
@@ -311,14 +312,14 @@
       "restrictionDays": 10,
       "periodDays": 14,
       "whitelistDays": 10,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/dagestan/"
     },
     "чеченская республика": {
-      "restrictionDays": 6,
+      "restrictionDays": 5,
       "periodDays": 14,
-      "whitelistDays": 6,
+      "whitelistDays": 5,
       "lastNotedDay": "21 ноября",
       "lastNotedDate": "2026-11-21",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chechnya/"
@@ -327,22 +328,22 @@
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tulskaya-oblast/"
     },
     "калужская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kaluzhskaya-oblast/"
     },
     "ярославская область": {
-      "restrictionDays": 14,
+      "restrictionDays": 13,
       "periodDays": 14,
-      "whitelistDays": 14,
+      "whitelistDays": 13,
       "lastNotedDay": "22 ноября",
       "lastNotedDate": "2026-11-22",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/yaroslavskaya-oblast/"
@@ -351,142 +352,142 @@
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/vladimirskaya-oblast/"
     },
     "тверская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tverskaya-oblast/"
     },
     "смоленская область": {
       "restrictionDays": 10,
       "periodDays": 14,
       "whitelistDays": 10,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/smolenskaya-oblast/"
     },
     "рязанская область": {
       "restrictionDays": 10,
       "periodDays": 14,
       "whitelistDays": 10,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ryazanskaya-oblast/"
     },
     "липецкая область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "21 ноября",
-      "lastNotedDate": "2026-11-21",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/lipetskaya-oblast/"
     },
     "тамбовская область": {
-      "restrictionDays": 5,
+      "restrictionDays": 6,
       "periodDays": 14,
-      "whitelistDays": 5,
-      "lastNotedDay": "20 ноября",
-      "lastNotedDate": "2026-11-20",
+      "whitelistDays": 6,
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tambovskaya-oblast/"
     },
     "орловская область": {
       "restrictionDays": 11,
       "periodDays": 14,
       "whitelistDays": 11,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/orlovskaya-oblast/"
     },
     "ивановская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ivanovskaya-oblast/"
     },
     "костромская область": {
-      "restrictionDays": 2,
+      "restrictionDays": 3,
       "periodDays": 14,
-      "whitelistDays": 2,
-      "lastNotedDay": "18 ноября",
-      "lastNotedDate": "2026-11-18",
+      "whitelistDays": 3,
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kostromskaya-oblast/"
     },
     "пензенская область": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/penzenskaya-oblast/"
     },
     "ульяновская область": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/ulyanovskaya-oblast/"
     },
     "удмуртская республика": {
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/udmurtiya/"
     },
     "чувашская республика": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/chuvashiya/"
     },
     "республика марий эл": {
-      "restrictionDays": 3,
+      "restrictionDays": 4,
       "periodDays": 14,
-      "whitelistDays": 3,
-      "lastNotedDay": "20 ноября",
-      "lastNotedDate": "2026-11-20",
+      "whitelistDays": 4,
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/mariy-el/"
     },
     "республика мордовия": {
       "restrictionDays": 7,
       "periodDays": 14,
       "whitelistDays": 7,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/mordoviya/"
     },
     "вологодская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/vologodskaya-oblast/"
     },
     "архангельская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/arkhangelskaya-oblast/"
     },
     "мурманская область": {
-      "restrictionDays": 12,
+      "restrictionDays": 11,
       "periodDays": 14,
-      "whitelistDays": 12,
+      "whitelistDays": 11,
       "lastNotedDay": "22 ноября",
       "lastNotedDate": "2026-11-22",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/murmanskaya-oblast/"
@@ -495,24 +496,24 @@
       "restrictionDays": 11,
       "periodDays": 14,
       "whitelistDays": 11,
-      "lastNotedDay": "20 ноября",
-      "lastNotedDate": "2026-11-20",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kareliya/"
     },
     "республика коми": {
       "restrictionDays": 8,
       "periodDays": 14,
       "whitelistDays": 8,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/komi/"
     },
     "новгородская область": {
       "restrictionDays": 9,
       "periodDays": 14,
       "whitelistDays": 9,
-      "lastNotedDay": "21 ноября",
-      "lastNotedDate": "2026-11-21",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/novgorodskaya-oblast/"
     },
     "псковская область": {
@@ -527,36 +528,36 @@
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kaliningradskaya-oblast/"
     },
     "курганская область": {
-      "restrictionDays": 9,
+      "restrictionDays": 10,
       "periodDays": 14,
-      "whitelistDays": 9,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "whitelistDays": 10,
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kurganskaya-oblast/"
     },
     "ямало-ненецкий автономный округ": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/yamalo-nenetskiy-ao/"
     },
     "томская область": {
       "restrictionDays": 11,
       "periodDays": 14,
       "whitelistDays": 11,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tomskaya-oblast/"
     },
     "республика алтай": {
-      "restrictionDays": 2,
+      "restrictionDays": 1,
       "periodDays": 14,
       "whitelistDays": null,
       "lastNotedDay": "17 ноября",
@@ -567,22 +568,22 @@
       "restrictionDays": 11,
       "periodDays": 14,
       "whitelistDays": 11,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/khakasiya/"
     },
     "республика тыва": {
-      "restrictionDays": 3,
+      "restrictionDays": 2,
       "periodDays": 14,
-      "whitelistDays": 3,
+      "whitelistDays": 2,
       "lastNotedDay": "19 ноября",
       "lastNotedDate": "2026-11-19",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/tyva/"
     },
     "республика бурятия": {
-      "restrictionDays": 7,
+      "restrictionDays": 6,
       "periodDays": 14,
-      "whitelistDays": 7,
+      "whitelistDays": 6,
       "lastNotedDay": "21 ноября",
       "lastNotedDate": "2026-11-21",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/buryatiya/"
@@ -591,52 +592,52 @@
       "restrictionDays": 12,
       "periodDays": 14,
       "whitelistDays": 12,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/zabaykalskiy-kray/"
     },
     "республика саха (якутия)": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sakha-yakutiya/"
     },
     "амурская область": {
       "restrictionDays": 13,
       "periodDays": 14,
       "whitelistDays": 13,
-      "lastNotedDay": "21 ноября",
-      "lastNotedDate": "2026-11-21",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/amurskaya-oblast/"
     },
     "хабаровский край": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/khabarovskiy-kray/"
     },
     "приморский край": {
       "restrictionDays": 14,
       "periodDays": 14,
       "whitelistDays": 14,
-      "lastNotedDay": "22 ноября",
-      "lastNotedDate": "2026-11-22",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/primorskiy-kray/"
     },
     "сахалинская область": {
       "restrictionDays": 8,
       "periodDays": 14,
       "whitelistDays": 8,
-      "lastNotedDay": "21 ноября",
-      "lastNotedDate": "2026-11-21",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/sakhalinskaya-oblast/"
     },
     "магаданская область": {
-      "restrictionDays": 10,
+      "restrictionDays": 9,
       "periodDays": 14,
       "whitelistDays": null,
       "lastNotedDay": "21 ноября",
@@ -644,9 +645,9 @@
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/magadanskaya-oblast/"
     },
     "камчатский край": {
-      "restrictionDays": 5,
+      "restrictionDays": 4,
       "periodDays": 14,
-      "whitelistDays": 5,
+      "whitelistDays": 4,
       "lastNotedDay": "15 ноября",
       "lastNotedDate": "2026-11-15",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kamchatskiy-kray/"
@@ -660,9 +661,9 @@
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kalmykiya/"
     },
     "астраханская область": {
-      "restrictionDays": 10,
+      "restrictionDays": 9,
       "periodDays": 14,
-      "whitelistDays": 10,
+      "whitelistDays": 9,
       "lastNotedDay": "22 ноября",
       "lastNotedDate": "2026-11-22",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/astrakhanskaya-oblast/"
@@ -671,8 +672,8 @@
       "restrictionDays": 8,
       "periodDays": 14,
       "whitelistDays": 8,
-      "lastNotedDay": "21 ноября",
-      "lastNotedDate": "2026-11-21",
+      "lastNotedDay": "23 ноября",
+      "lastNotedDate": "2026-11-23",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/adygeya/"
     },
     "карачаево-черкесская республика": {
@@ -684,9 +685,9 @@
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/karachaevo-cherkesiya/"
     },
     "кабардино-балкарская республика": {
-      "restrictionDays": 6,
+      "restrictionDays": 5,
       "periodDays": 14,
-      "whitelistDays": 6,
+      "whitelistDays": 5,
       "lastNotedDay": "22 ноября",
       "lastNotedDate": "2026-11-22",
       "url": "https://shutdown.fyi/kogda-vklyuchat-internet/kabardino-balkariya/"
@@ -717,11 +718,11 @@
     }
   },
   "taucloud": {
-    "checkedAt": "2026-11-24T03:45+00:00",
+    "checkedAt": "2026-11-24T14:31+00:00",
     "url": "https://taucloud.ru/belye-spiski/karta",
     "districts": {
       "ЦФО": {
-        "percentage": 86,
+        "percentage": 71,
         "enabled": null,
         "disabled": null,
         "measuredOperators": null,
@@ -736,7 +737,7 @@
         "status": "unknown"
       },
       "ЮФО": {
-        "percentage": 70,
+        "percentage": 30,
         "enabled": null,
         "disabled": null,
         "measuredOperators": null,
@@ -803,264 +804,264 @@
       "москва": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "московская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "белгородская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "брянская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "владимирская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "воронежская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "ивановская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "калужская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "костромская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "курская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "липецкая область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "орловская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "рязанская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "смоленская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "тамбовская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "тверская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "тульская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "ярославская область": {
         "status": "possible",
         "district": "ЦФО",
-        "percentage": 86,
+        "percentage": 71,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "республика адыгея": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "республика калмыкия": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "краснодарский край": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "астраханская область": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "волгоградская область": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
       "ростовская область": {
         "status": "possible",
         "district": "ЮФО",
-        "percentage": 70,
+        "percentage": 30,
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1071,7 +1072,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1082,7 +1083,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1093,7 +1094,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1104,7 +1105,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1115,7 +1116,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1126,7 +1127,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1137,7 +1138,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1148,7 +1149,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1159,7 +1160,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1170,7 +1171,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1181,7 +1182,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1192,7 +1193,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1203,7 +1204,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1214,7 +1215,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1225,7 +1226,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1236,7 +1237,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1247,7 +1248,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1258,7 +1259,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1269,7 +1270,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1280,7 +1281,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1291,7 +1292,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1302,7 +1303,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1313,7 +1314,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1324,7 +1325,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1335,7 +1336,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1346,7 +1347,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1357,7 +1358,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1368,7 +1369,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1379,7 +1380,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1390,7 +1391,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1401,7 +1402,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1412,7 +1413,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1423,7 +1424,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1434,7 +1435,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1445,7 +1446,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1456,7 +1457,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1467,7 +1468,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1478,7 +1479,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1489,7 +1490,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1500,7 +1501,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1511,7 +1512,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1522,7 +1523,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       },
@@ -1533,7 +1534,7 @@
         "activeOperators": null,
         "disabledOperators": null,
         "measuredOperators": null,
-        "checkedAt": "2026-11-24T03:45+00:00",
+        "checkedAt": "2026-11-24T14:31+00:00",
         "url": "https://taucloud.ru/belye-spiski/karta",
         "level": "district"
       }
