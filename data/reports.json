@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T01:29:21+00:00",
+  "updatedAt": "2026-11-26T10:23:18+00:00",
   "reports": [
     {
       "title": "НАУФОР просит включить в «белые списки» сайты и сервисы участников рынка ценных бумаг - Финам",
@@ -338,6 +338,14 @@
       "source": "Yandex Cloud",
       "regions": [],
       "summary": "Обзор платформы | Получение сведений, необходимых для включения ресурса в белый список Минцифры Yandex Cloud"
+    },
+    {
+      "title": "Сервисы Платформы ОФД включены в «белый список» Минцифры - TAdviser",
+      "url": "https://news.google.com/rss/articles/CBMiiwZBVV95cUxOMVZhUEdPNEo2YTBGR0ppWWlaUjNsTHAyYlY2ZVFkYVFzMUdkWmg5WjVLVVpyN2FQR2NRLXk2YkJGRWJJeTV3S3hkN04tbTEySEZLUll2T0dZLVpvaTFJZG13bnk5YU5pRkJIa3BUR20xd296UWVYbHNHMGR4YzlLT2VvelZIcUozWEw2TV9kMTdScWJla3ZFajRna1dSLUJXMXlkbWdmaUx3aE5lSTFkTGVraWFEOXVhb0t6cXVhS1pMWnVydGk0YXB6TTJXd3Q3VXJEd2I1UEdCbzQwQk5qd2RfX3VUYU1QOXA0Q0pLWDRka3pVMFhqMjJBZE1EaWlKWXNPUjJfd3puNW9WLVllTUpOYzBGQ3RNUHdTSEtZamlrREN5aVdGV3NhbUQyUFdkWWpCY0hkSEVPTmFjUkV0OW5ldUdJUVlUR1lQV3EtMV8tS3hVNHZKcVUzd2pWdXQ3ZTR4ZG9uRVNXUm04ck5IY3Z6Yk1kZHJYUDdKSW02YWFDakhQZmxrNEdUczNyUElkeUJmRzE1VHNTcWJ2VGJhRVJTZ1Q1Wld3dXAxQU1XdW9BQVJKLU9pTGNXQVc5QUNxeEhYaEx2Z1MxNnN2cWhxVDQxN0NPX0xKdHZlLW5VYV80cEh2ZGh3RWRScklCUmZ3YVFubF83VFA5UEFwZldzZ0Q3RWV4ZC1ocUVxU1FyNWdyQUpqeklxbnpjaFI0VDNKeGxFX1BFdndYR3ZKY3FEa2EzSjVycjBMVXhOcC1hdEdpUlMxa252NzZmbXZDcmZsb1VaQm02dEtiTTZRNmp3ZWZFbzlPM09NV1h5ZjNKTlQ1Q0c2ZU9pLTJIcWZ1NWY5UnZKeEhFTEc4d0dWMTFZR3Zaam1MM0tBeGtCVEc4cEFtd2dPbHdLR2liQlFaNVJsYlVpZEJCb202eFd2Um1TcFY0MWtpOWpDY21aU2lhd2Q2clVsem13Z0FkTUdDS2phS1E2LTBzSk4wNmx2dW9pVklZZnZjRGVJMk9mNmpRYTd6UWxuXzlHOUg3SQ?oc=5",
+      "date": "Tue, 12 May 2026 07:00:00 GMT",
+      "source": "TAdviser",
+      "regions": [],
+      "summary": "Сервисы Платформы ОФД включены в «белый список» Минцифры TAdviser"
     },
     {
       "title": "Белый список мобильного интернета: как работает и особенности у Мегафон, Билайн, МТС при блокировке - Журнал CHIP",
@@ -1265,16 +1273,6 @@
       "source": "Информационное агентство «Тульская пресса»",
       "regions": [],
       "summary": "«Белый список» почти заполнен: какие сервисы оставили доступными тулякам Информационное агентство «Тульская пресса»"
-    },
-    {
-      "title": "В Москве заработали «белые списки» сайтов - Forbes.ru",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdVpOYjBKWmdnQWhOYU1ENUJkczcwNWlvYVAwLTd4a09lMHI0aHd6ekJVQ1JFaG1BNzF1Wm1Sd29ReWlBNkd2V3FVVWVJU0dDVzBDUU5ad2VncmQyYzk3QUxXTXhBS05mcEdDZ1VodDF0aVZYZ2NLQVE3T2U2UVQzYk9tbk9YZWM?oc=5",
-      "date": "Fri, 13 Mar 2026 07:00:00 GMT",
-      "source": "Forbes.ru",
-      "regions": [
-        "Москва"
-      ],
-      "summary": "В Москве заработали «белые списки» сайтов Forbes.ru"
     }
   ]
 }
