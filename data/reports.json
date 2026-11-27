@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T02:43:03+00:00",
+  "updatedAt": "2026-11-27T11:43:06+00:00",
   "reports": [
     {
       "title": "НАУФОР просит включить в «белые списки» сайты и сервисы участников рынка ценных бумаг - Финам",
@@ -444,6 +444,14 @@
       "source": "ФОНТАНКА.ру",
       "regions": [],
       "summary": "Первый день без интернета. Минцифры согласовывает «белый список» для Москвы ФОНТАНКА.ру"
+    },
+    {
+      "title": "Источник о перебоях с мобильным интернетом: теоретически должны работать «белые списки» - Новый Калининград.Ru Новости Калининграда",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQbUxWM3hpeVBXX0JoWjdBLTlrMGlKNzFURXZSdnZxQnM2WFhacm9wR2JBRS0yQXowZnVrNWZxMGx5cExOYlo5NS1oTEp5V1UyQVN1cWJIWG1sWGt3YVllXzdQZUdxYkkwWnk4ckRkdVZTSUFURGw4RWtXTEpNZ2JIX0ZTS1JrVi1VSEFpWWktRkJhd3N2d2JOV1BudHVWRXpRMTlwQVZndVk5UnpwTDRUeWJyVXRwYUVQaG1CYnZCOVRvTEhleHl1dF9nT3NFNjF5UXRFWGhtOElBTFlIWi1nVGtma1dLZi1W?oc=5",
+      "date": "Tue, 05 May 2026 07:00:00 GMT",
+      "source": "Новый Калининград.Ru Новости Калининграда",
+      "regions": [],
+      "summary": "Источник о перебоях с мобильным интернетом: теоретически должны работать «белые списки» Новый Калининград.Ru Новости Калининграда"
     },
     {
       "title": "Помогают ли «белые списки» при отключениях мобильного интернета в России? - BBC",
@@ -1265,16 +1273,6 @@
       "source": "AndroidInsider.ru",
       "regions": [],
       "summary": "Как я нахожу бесплатный Wi-Fi, когда включаются белые списки AndroidInsider.ru"
-    },
-    {
-      "title": "Ограничения мобильного интернета в Оренбурге. Работают «белые списки» - Оренбург Медиа",
-      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5heURMTXVRdGhqdXc0dURHRS14SXlSTkg2NDlmdjhVbFVSOEszclh2WDUyMUZ6amtvemltMEs5SkhKazN6YmVr0gFPQVVfeXFMTmwtblFvZzFWSE5IV2RtdDRBbUh0NmU1UmtrdjFHcEw2eDJhd3N4QjdueXh2NDZ1cTBtOWlJdUhKMGR1NG81RUU4WWpGUmo5bw?oc=5",
-      "date": "Fri, 13 Nov 2026 07:21:29 GMT",
-      "source": "Оренбург Медиа",
-      "regions": [
-        "Оренбургская область"
-      ],
-      "summary": "Ограничения мобильного интернета в Оренбурге. Работают «белые списки» Оренбург Медиа"
     }
   ]
 }
