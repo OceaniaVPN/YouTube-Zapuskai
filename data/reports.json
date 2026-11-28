@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T03:04:49+00:00",
+  "updatedAt": "2026-11-28T12:42:05+00:00",
   "reports": [
     {
       "title": "НАУФОР просит включить в «белые списки» сайты и сервисы участников рынка ценных бумаг - Финам",
@@ -102,6 +102,14 @@
       "summary": "Какие сайты и сервисы входят в белый список Минцифры: актуальная информация Код.ру"
     },
     {
+      "title": "В Казани час не работал мобильный интернет, белые списки без режима БПЛА - Techora.ru",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5lZWRPRFZvckdneGJ2Z21QUlRxeUJ2RWRyMUJmZGpXeDhaWlpMNlJDd25WUTZuS2psbUZHS2VMLTFOUVZWa2hKU0UxYUd4aDhLWmRETk9KOWg2LTdoZGk0ajJyTFhQVHJ2aWczQTJZdmFNM3ZucDZN?oc=5",
+      "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "source": "Techora.ru",
+      "regions": [],
+      "summary": "В Казани час не работал мобильный интернет, белые списки без режима БПЛА Techora.ru"
+    },
+    {
       "title": "Связь ограничили. В Оренбурге действуют «белые списки» - Оренбург Медиа",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE00aFE5LUF5NDZKSTczMElua2VlQTdJcmI1Mk9HRks1bU5YSy1EMGVVX3kwcHlYd2lVS2k1RlFoR2xXLWRhcTJz0gFPQVVfeXFMTWhIaTEwS21MRmNIQWdKbXFFTHd3NzE5Ykxscm5HQ3V4Wjk0Yno4ZzJZMHI2NC1lZXRNNXdVOGFuWmhFTmdhQzM4VlAtN1l2MA?oc=5",
       "date": "Wed, 11 Nov 2026 08:00:00 GMT",
@@ -178,6 +186,14 @@
         "Московская область"
       ],
       "summary": "Эксперты: в Подмосковье 51% пользовательских сессий пришлись на «белые списки» TelecomDaily"
+    },
+    {
+      "title": "Жители городов Чувашии два месяца ограничены «белым списком» мобильного интернета - Techora.ru",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQY21ZRVNWNnZ2QVpGSnJjd25MWEtzNW9IVTY4UzY0UTEyZE9RbWRIUEhwMFZSTmxJWTRZUVExYkM4V2VyZ0w4YjhtazlNVzNGbEFnM1ZIQnJ2eEM0eFVMcTNQdi1vNlFPUGpPdnQ3LUQtN0lnZFk4aS1HWEVSTGdYUUFvaExfdjV0VnNWbS13?oc=5",
+      "date": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "source": "Techora.ru",
+      "regions": [],
+      "summary": "Жители городов Чувашии два месяца ограничены «белым списком» мобильного интернета Techora.ru"
     },
     {
       "title": "Минцифры расширило \"белый список\" работающих без мобильного интернета сервисов - Интерфакс",
@@ -522,6 +538,16 @@
       "summary": "Москвичей предупредили об ограничениях интернета — мы проверили, включены ли «белые списки» MSK1.RU"
     },
     {
+      "title": "Связь ограничили. В Оренбурге действуют «белые списки» - Оренбург Медиа",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1sWUV1ODN0Um1HcmNSdldSQm9xODA5R2NFODhkSk9FWHMyRkxaTHdockxEMVVOS25ubXE2cW5ZYUMteUxNUHV30gFPQVVfeXFMTXhISXV1b3lmZzE5SXBralB4QjZiX1NUeG5RcnplMkQ5MUpBYS1JaHZieXNQSnN0QlhEYXNMZWVfMVh6TThZQ0xJZXpZMUh6Yw?oc=5",
+      "date": "Thu, 29 Oct 2026 07:00:00 GMT",
+      "source": "Оренбург Медиа",
+      "regions": [
+        "Оренбургская область"
+      ],
+      "summary": "Связь ограничили. В Оренбурге действуют «белые списки» Оренбург Медиа"
+    },
+    {
       "title": "Перебои с интернетом. В Оренбурге действуют “белые списки” - Оренбург Медиа",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBOaGZ4a3liU1Z4TnliU1p1ZEY4WENkdC05YTRSQmVoUmVuM1U2SnlCeTRCQTNLZ0FZcUlFWkVLNWRxR0t0dnhR0gFPQVVfeXFMT0RGVmJCUEFsY0JNN0xJZGk3RlM1Sk1VMlI3czJ1bFJIWlUtOG5BYkR0UEo1cVBJcnRrbXFqNTlHdzdKWHY1cGxOdmNHMmc4NA?oc=5",
       "date": "Thu, 27 Aug 2026 07:00:00 GMT",
@@ -592,6 +618,16 @@
       "source": "Интерфакс",
       "regions": [],
       "summary": "Расширен \"белый список\" сайтов, доступных при ограничении мобильного интернета Интерфакс"
+    },
+    {
+      "title": "Ограничили интернет. В Оренбурге ввели «белые списки» - Оренбург Медиа",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFA4cTlvQVJ5d1lPVDVrakl1TFhnQUxMVFVCRjltSzRkZ3hVcFJtMHJreGNVa3VfeDN6TVVkQmtMTUI0bHQ0WXhN0gFPQVVfeXFMTUs1cnRKclFHSFZoT0d4Q25tTFdVbG5Nb3F2bHNSc0FZYkJ5cFoza19uZnhONThSdzNlYkZsUjlPOXpzTHZVcFQtUDBKMGlQMA?oc=5",
+      "date": "Thu, 15 Oct 2026 07:00:00 GMT",
+      "source": "Оренбург Медиа",
+      "regions": [
+        "Оренбургская область"
+      ],
+      "summary": "Ограничили интернет. В Оренбурге ввели «белые списки» Оренбург Медиа"
     },
     {
       "title": "«Белый список» сайтов: что реально работает при отключении интернета? - tagilcity.ru",
@@ -716,6 +752,16 @@
       "summary": "В Томске сбой мобильного интернета: не открываются даже сайты из белого списка Techora.ru"
     },
     {
+      "title": "Связь ограничили. В Оренбурге действуют «белые списки» - Оренбург Медиа",
+      "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9zWWtjQmZFa191QmMtbVY2eFJPQlpUaU12TzBQdGhLNkFqcjBCUHF3czh1Q2sxbTNKMkswclJfWHllcGd0aGMw0gFPQVVfeXFMTmRwUmk5MEZTeTVLLXF0UXFnLS1MZURjNDF3bDBoUW8zSG95ZkgtQ1gwaXhxWVlHMGVTY3A5NUtveE50M3FFZlY0b1NnSlRVSQ?oc=5",
+      "date": "Thu, 08 Oct 2026 07:00:00 GMT",
+      "source": "Оренбург Медиа",
+      "regions": [
+        "Оренбургская область"
+      ],
+      "summary": "Связь ограничили. В Оренбурге действуют «белые списки» Оренбург Медиа"
+    },
+    {
       "title": "В Москве 9 мая полностью ограничат мобильный интернет, в том числе на \"белый список\" - Интерфакс",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBQQzRlZTRuYjZRbXdWTEtfem44dm5lUzVuQ3NDUDRFdHdOempUUld4Nnp1VDllb09EblZfRHZVbjFyVzVLWkREaHdOOGpDeUHSAUtBVV95cUxPdHdQYWFwNTA3VkVTbm5xRlJGaXlqaGsySktVWjRDdnhHR1J4c3ZNeTc2eE9tWUZOR3oyUFJfZjU3Q2NoRTBrUHctb1k?oc=5",
       "date": "Thu, 07 May 2026 07:00:00 GMT",
@@ -824,6 +870,14 @@
       "summary": "Минцифры попросило хостеров выделить IP из белого списка в подсети для закрытия лазейки Techora.ru"
     },
     {
+      "title": "В Зеленодольске второй день не работает мобильный интернет, доступны белые списки - Techora.ru",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1sakYtRjRlcDZxNUdZSExkSlVTYWd5NGFxTmZUSTdqUzViNGJ1M01QRmh0QW94NVRnYVZRQ3pPU2dVdVpEQnNpanBfQ1k4SVlvRHI0UTFrUGtnSmRHTElMbXJ6UUhvR2tPd29NRmtMQ3JHLW9sNU5BWHVPSTM?oc=5",
+      "date": "Sun, 23 Aug 2026 07:00:00 GMT",
+      "source": "Techora.ru",
+      "regions": [],
+      "summary": "В Зеленодольске второй день не работает мобильный интернет, доступны белые списки Techora.ru"
+    },
+    {
       "title": "«Яндекс» пояснил, что «Яндекс Поиск» входит в «белый список» Минцифры и работает при ограничениях мобильного интернета - Хабр",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5nMGROR1V6SHZKTG9yOHhpWGVvLWxPdXlMTXctWmEtUmNISmp6OUhIeDBjcWFqMENEMF9YblQ0T1VUREFiclRwTjRiaTN0QdIBWEFVX3lxTE0xNHpnbU1ldHVJSTNvazM3RGZaVXhNdUdhZzh0SndaT2tCYV9mNWY3Z3N1RU9fM1lKY3phdjZLeTRMQ1J5blNYbExWbk16MGhHOFVCV29Qbms?oc=5",
       "date": "Sun, 22 Mar 2026 07:00:00 GMT",
@@ -850,6 +904,16 @@
         "Санкт-Петербург"
       ],
       "summary": "В Петербург пришли \"белые списки\": что происходит с интернетом в городе RTVI"
+    },
+    {
+      "title": "Минцифры России разрабатывает единые прозрачные правила для включения интернет-ресурсов в белый список — у ФСБ ко многим есть вопросики - GoHa.Ru",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSHhDQWtOLTBRNDlnVDNwcDVBS3pHdVNYTmY1RjhudWJqNmxKcGNWb2pQVmw4bTViTU1RMzU0aDhfVFRLZHIzVHpiVUtfX1pZUXJySkNSNFpfMm11UU80amhla3dlMmJRbVJLWmt6T3Z3bFo4RW5uNlZNakVmSVFuWDhmamxuTHlnU1NidnpyNTFBS1NQcDUwLWxXZ0N1YTNXTDVVZXRmQmFNa2FOME9teWlrb2lpUU9xT1JPS1JWcTQ0UHJ4dUh6WG10OFdOcWdRUjVVRjNfSXVFSURtRHBBMndJRjQxRkdMcW4tXzJSWHRqYUpkRURr?oc=5",
+      "date": "Sat, 28 Nov 2026 10:57:11 GMT",
+      "source": "GoHa.Ru",
+      "regions": [
+        "Республика Тыва"
+      ],
+      "summary": "Минцифры России разрабатывает единые прозрачные правила для включения интернет-ресурсов в белый список — у ФСБ ко многим есть вопросики GoHa.Ru"
     },
     {
       "title": "В Оренбурге ввели «белые списки» для мобильного интернета - Techora.ru",
@@ -1077,16 +1141,6 @@
       "summary": "«Белый список» не спас, домашний Wi-Fi тоже подводит. Москва и Петербург столкнулись с перебоями связи SecurityLab.ru"
     },
     {
-      "title": "Минцифры России разрабатывает единые прозрачные правила для включения интернет-ресурсов в белый список — у ФСБ ко многим есть вопросики - GoHa.Ru",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSHhDQWtOLTBRNDlnVDNwcDVBS3pHdVNYTmY1RjhudWJqNmxKcGNWb2pQVmw4bTViTU1RMzU0aDhfVFRLZHIzVHpiVUtfX1pZUXJySkNSNFpfMm11UU80amhla3dlMmJRbVJLWmt6T3Z3bFo4RW5uNlZNakVmSVFuWDhmamxuTHlnU1NidnpyNTFBS1NQcDUwLWxXZ0N1YTNXTDVVZXRmQmFNa2FOME9teWlrb2lpUU9xT1JPS1JWcTQ0UHJ4dUh6WG10OFdOcWdRUjVVRjNfSXVFSURtRHBBMndJRjQxRkdMcW4tXzJSWHRqYUpkRURr?oc=5",
-      "date": "Mon, 23 Nov 2026 06:49:32 GMT",
-      "source": "GoHa.Ru",
-      "regions": [
-        "Республика Тыва"
-      ],
-      "summary": "Минцифры России разрабатывает единые прозрачные правила для включения интернет-ресурсов в белый список — у ФСБ ко многим есть вопросики GoHa.Ru"
-    },
-    {
       "title": "Власти опровергли планы ввести в России «белые списки» для отключения домашнего интернета - CNews.ru",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44aG1QUEpCaVBQcGVJMi04Q053V3pWRTlnVk1sMnJnNG5EbGFmamxodGJHbzdTT3lubVhEaEdqcWlrNXJEZGEyOGM2LXBieExVUmNYRVZpVG9UOEJXUVFidlRETnhXMF9ZRjFCZ2YxSmFoMzhBTEVDNg?oc=5",
       "date": "Mon, 23 Mar 2026 07:00:00 GMT",
@@ -1187,12 +1241,12 @@
       "summary": "Минцифры разработает единые правила включения сайтов в «белые списки» rb.ru"
     },
     {
-      "title": "«Белый список» сайтов в России сделают понятнее: Минцифры совершенствует правила - www1.ru",
+      "title": "«Белый список» сайтов в России сделают понятнее: Минцифры совершенствует правила - Первый технический",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNXzZGYjVSTWtIS2lWZGpubWpzYXpwWUJPcFdvc08waU9DQ1dPYzFKT01DTmJmcS14NEctZVpucGQweGhubFF1QU8xb243T1ZIUFNmVDkzSVNSekdfZm9YeWdBZVNxS2hFMWdJcWh2S18wbFdLQVRrNTRyV3R4SzZ6R3VUaGNPelBFMHJJRmRHSjZOMFVnNGo1aTM3bHVNM09QY3htOUYtRWpGWnV4dVFvSHdNemE0MWRuSHF0eDAxVEHSAcYBQVVfeXFMUDFYd2p6M0NuTlhkVnp0TTB3TThlYVRkUl90SGdwMlNLRjV0aS1NcHBKTzhpSDNHZ3dKOVlteV9kbEFqLUZqWlFmU0F2eUZGY2V0T1JhZXVQQjV1ai1oUVBYS3dlQTdWa1RHM0lYRVBBWm05UlpxSGFWNDQ2T0V6WXVRRkNtU0FYSXVDcmJkM3JWLWw4aHFPcFZyd0tlaExxcUhSbF93NWJ3S3U3Q1VVRzNfNEF3dUo5UGVKaFpsbUhDUzVzb3p3?oc=5",
       "date": "Mon, 05 Oct 2026 07:00:00 GMT",
-      "source": "www1.ru",
+      "source": "Первый технический",
       "regions": [],
-      "summary": "«Белый список» сайтов в России сделают понятнее: Минцифры совершенствует правила www1.ru"
+      "summary": "«Белый список» сайтов в России сделают понятнее: Минцифры совершенствует правила Первый технический"
     },
     {
       "title": "Минцифры введёт единые правила включения сайтов в белые списки: сейчас компании не понимают, как туда попасть - iPhones.ru",
@@ -1225,54 +1279,6 @@
       "source": "Amic.ru",
       "regions": [],
       "summary": "Минцифры готовит единые правила для \"белого списка\" сайтов Amic.ru"
-    },
-    {
-      "title": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. - Inc Russia",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcmR3UDJwY2R4NkN3U3lTTUM5ZmFUaDFJTHJkb01GNjJabXFDRk5JNlNCaHZMMmJ3dF9YeUcyWER1Q2JqSzNDQ09Ga3dncUFpSkhhbV8yLUMySTE2NEZhY1BndWE2Y0FUQ09xd1JRa25ySmF2NkxhODBwUEZOOGNIY3kySGQ2eDFvRk5IZkhRbmlpZw?oc=5",
-      "date": "Mon, 05 Oct 2026 07:00:00 GMT",
-      "source": "Inc Russia",
-      "regions": [],
-      "summary": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. Inc Russia"
-    },
-    {
-      "title": "Как работает «белый список» при отключении интернета в Архангельской области - region29",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPYTBmMkUzcnhTUmJ2ckZIZFJIb2Q4MDFyUHlWdmtRLTExd0ZkVEduOEo1eHJEb0dLT2xUZThRZVNjR0VwTzRsc1hCQThIOG8yUnBDZlNkNFh6XzFidDdWMU5yLTAydmhmSlpTTA?oc=5",
-      "date": "Fri, 30 Jan 2026 08:00:00 GMT",
-      "source": "region29",
-      "regions": [],
-      "summary": "Как работает «белый список» при отключении интернета в Архангельской области region29"
-    },
-    {
-      "title": "Как обойти «белые списки»? - «Бумага»",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tdWtKRHN4UkY5WHIyclpIS2lPVUFubzlhdWo2QXlTaU01RkpSeFNWSW9RQi1CM2RSR3JtVGE0VHFNbHp4WGI3cVdIVjc4S0RPeWxMZkFvUXo4b2xvVWdjY2Nsc2ttaDh50gFuQVVfeXFMTnJvbFBUR0hRSzh0NGhKU2V6TXlYdUYtejdleFlHaFV2eEdKeE11dGZuLTNmcnR4ZWlfdkJfZ0NvVnpjdFZkajVJaDF1S0tQVWtnaXNuUFJKNWZDbUtTb09XdUYtTzJhVjBBd0tQY1E?oc=5",
-      "date": "Fri, 27 Mar 2026 07:00:00 GMT",
-      "source": "«Бумага»",
-      "regions": [],
-      "summary": "Как обойти «белые списки»? «Бумага»"
-    },
-    {
-      "title": "«Белый список» сервисов, которые должны работать при отключении мобильного интер­нета, — что туда входит - Т—Ж",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE56OFdnSnNqakNsajZwa2ZEWTg3T2ZGQ3U0MlJMXzR5TlVnWmZqcGV2alYwWE5zTV9YYW5MT2lBekJRQ0pq?oc=5",
-      "date": "Fri, 26 Sep 2025 10:01:51 GMT",
-      "source": "Т—Ж",
-      "regions": [],
-      "summary": "«Белый список» сервисов, которые должны работать при отключении мобильного интер­нета, — что туда входит Т—Ж"
-    },
-    {
-      "title": "Глава ЦБ заявила, что финорганизации будут включаться в \"белые списки\" поэтапно - Интерфакс",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5hZmk3SFlMNjhmTkJDRE5KVVBnT0VBMlZaVHNPSWI0ZG03YXVIekpUVDltT1AtT1ExM0tITEtmZ1VrRTE0cV80ZXQwV3pQOFFQ0gFLQVVfeXFMTlRJLUFKYnFfbnQ4N1BKc2stcnhMSjl2U212MXhOWFZ5ME8wU1A4dHd0NzN0RkxBQ2I1X0F5S2FaUG5nTUxqZl9UaVFj?oc=5",
-      "date": "Fri, 22 May 2026 07:00:00 GMT",
-      "source": "Интерфакс",
-      "regions": [],
-      "summary": "Глава ЦБ заявила, что финорганизации будут включаться в \"белые списки\" поэтапно Интерфакс"
-    },
-    {
-      "title": "Нестабильные «белые списки». Россиян оставят без постоянного перечня разрешенных сайтов – изменения будут еженедельными - CNews.ru",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8xTFZSVnRYLWQ3UnVFc2hMdGtscHRxQmhsRVdiV3RGRmdfQ25vYkNFODJXQTVtcERlLWRFTHBxOURuWVBiUUFiU1N0bkZmMHpMeWN4UlFpVjdldktqXzdrWmlmUGtvT09uWnczaElHVEVsOVk?oc=5",
-      "date": "Fri, 19 Sep 2025 07:00:00 GMT",
-      "source": "CNews.ru",
-      "regions": [],
-      "summary": "Нестабильные «белые списки». Россиян оставят без постоянного перечня разрешенных сайтов – изменения будут еженедельными CNews.ru"
     }
   ]
 }
