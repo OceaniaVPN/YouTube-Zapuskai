@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T20:37:14+00:00",
+  "updatedAt": "2026-11-28T03:04:49+00:00",
   "reports": [
     {
       "title": "НАУФОР просит включить в «белые списки» сайты и сервисы участников рынка ценных бумаг - Финам",
@@ -34,6 +34,14 @@
       "source": "inkazan.ru",
       "regions": [],
       "summary": "«Белый список» и сим-карты по «Госуслугам»: каким будет интернет после СВО inkazan.ru"
+    },
+    {
+      "title": "Белый список интернета стал новой бизнес-лицензией - Techora.ru",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaXB1Yl82bzZTbUtObzNJNUdVZUpscWFvSDV3aDk2VkFaTEJ6VEFqelFUY0J2VzN1SllpaUxBOUpKZnM4OUppbkg3eTRGUTd1ZENvNk45Uk5raUY5MHBKUWg4dUJjSmM4TXJmYTRtempiYnF1dFB5X3lKNXhZaG03cQ?oc=5",
+      "date": "Wed, 23 Sep 2026 07:00:00 GMT",
+      "source": "Techora.ru",
+      "regions": [],
+      "summary": "Белый список интернета стал новой бизнес-лицензией Techora.ru"
     },
     {
       "title": "В России хотят отменить белые списки, но интернет будет по пропускам - AppleInsider.ru",
@@ -594,20 +602,20 @@
       "summary": "«Белый список» сайтов: что реально работает при отключении интернета? tagilcity.ru"
     },
     {
-      "title": "Минцифры предупредило о приближении к лимиту белого списка из 900 сайтов и сервисов - TKS.RU",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU1l4UFdFdmdIRm5XcTAwaWdlNWJKcGVVQk5nb25QWEM1YVNrdzlBUktEYWlwWHFqdm5hMEFwaEFQRXAtcjM2czY5V0pDUjdfbTN5bFREaEFUbFNzT2VfZzIzNW40LTU4YWtKelJWeFc5VTRzTEJMUWZWYXJSRjhnRkZKUExSYjhaZzdhaWlMNngyN3B2eTBET2ZGWWttcTY3dXJlVVJraE9Fb0pYSXJZbGZLYUZTSTFQLWhYVWliYzlHQWVxMHYzRTVUaw?oc=5",
-      "date": "Thu, 12 Nov 2026 14:17:59 GMT",
-      "source": "TKS.RU",
-      "regions": [],
-      "summary": "Минцифры предупредило о приближении к лимиту белого списка из 900 сайтов и сервисов TKS.RU"
-    },
-    {
       "title": "Более 900 интернет-ресурсов в России включены в \"белые списки\" - https://saomos.news/",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTFpYV1QzMW5vOFY0cGd0VUFzRUtNWkdwakJOY2dtMDBSeHU1RzEyZHFPUXBGT1dzRi1HN3Q2OUt3RnhWYjlTNXNpbnJTQ2NzUTk4UkljZjgzSTJ6SjYtcGtZN0x2NVBLdW1PczdmVGdKUzRWend5MmxHelUzZVUyOHM1bFZjS0lqejhyN2x1SnlMcW10VWZkN0Z6WGw?oc=5",
       "date": "Thu, 12 Nov 2026 10:02:08 GMT",
       "source": "https://saomos.news/",
       "regions": [],
       "summary": "Более 900 интернет-ресурсов в России включены в \"белые списки\" https://saomos.news/"
+    },
+    {
+      "title": "Минцифры предупредило о приближении к лимиту белого списка из 900 сайтов и сервисов - TKS.RU",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU1l4UFdFdmdIRm5XcTAwaWdlNWJKcGVVQk5nb25QWEM1YVNrdzlBUktEYWlwWHFqdm5hMEFwaEFQRXAtcjM2czY5V0pDUjdfbTN5bFREaEFUbFNzT2VfZzIzNW40LTU4YWtKelJWeFc5VTRzTEJMUWZWYXJSRjhnRkZKUExSYjhaZzdhaWlMNngyN3B2eTBET2ZGWWttcTY3dXJlVVJraE9Fb0pYSXJZbGZLYUZTSTFQLWhYVWliYzlHQWVxMHYzRTVUaw?oc=5",
+      "date": "Thu, 12 Nov 2026 08:00:00 GMT",
+      "source": "TKS.RU",
+      "regions": [],
+      "summary": "Минцифры предупредило о приближении к лимиту белого списка из 900 сайтов и сервисов TKS.RU"
     },
     {
       "title": "Минцифры предупредило о скором достижении лимита «белого списка» сайтов - rb.ru",
@@ -1219,12 +1227,12 @@
       "summary": "Минцифры готовит единые правила для \"белого списка\" сайтов Amic.ru"
     },
     {
-      "title": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. - Inc. Russia",
+      "title": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. - Inc Russia",
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcmR3UDJwY2R4NkN3U3lTTUM5ZmFUaDFJTHJkb01GNjJabXFDRk5JNlNCaHZMMmJ3dF9YeUcyWER1Q2JqSzNDQ09Ga3dncUFpSkhhbV8yLUMySTE2NEZhY1BndWE2Y0FUQ09xd1JRa25ySmF2NkxhODBwUEZOOGNIY3kySGQ2eDFvRk5IZkhRbmlpZw?oc=5",
       "date": "Mon, 05 Oct 2026 07:00:00 GMT",
-      "source": "Inc. Russia",
+      "source": "Inc Russia",
       "regions": [],
-      "summary": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. Inc. Russia"
+      "summary": "Минцифры подготовит единые правила для «белого списка» сайтов - Инк. Inc Russia"
     },
     {
       "title": "Как работает «белый список» при отключении интернета в Архангельской области - region29",
@@ -1265,14 +1273,6 @@
       "source": "CNews.ru",
       "regions": [],
       "summary": "Нестабильные «белые списки». Россиян оставят без постоянного перечня разрешенных сайтов – изменения будут еженедельными CNews.ru"
-    },
-    {
-      "title": "Белый список: какие сайты будут работать при ограничении интернета? - Интерфакс Россия",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSTV3VV9CYXpDT2xPbjFqNkc0MFpQWDFmaDV5VW9RaVQ3SmVtU2wyNTMzcUJiZDR5UWF5MjQ4NjBwTkRWYmNyR25JLUtfWDhfTUVpQTFsa0tpdVd4QTZyZ0V2dTdsWWFlZF85QWwyaUx6WG9XaHFpdTNVbWRSZV9nV1owOGJBbGw4VTFISTNXTU4yVk1ORUtQOGJGNm5hSGY2QUdV?oc=5",
-      "date": "Fri, 19 Sep 2025 07:00:00 GMT",
-      "source": "Интерфакс Россия",
-      "regions": [],
-      "summary": "Белый список: какие сайты будут работать при ограничении интернета? Интерфакс Россия"
     }
   ]
 }
